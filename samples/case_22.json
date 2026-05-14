@@ -1,0 +1,56 @@
+{
+  "id": "case_22",
+  "description": "32 y/o female housewife with classic uncomplicated lower UTI × 3 days — dysuria, frequency, low-grade fever. 2 prior UTIs last year. No flank pain.",
+  "parameters": {
+    "category": "Other",
+    "age": 32,
+    "sex": "Female",
+    "education": "Secondary",
+    "occupation": "Housewife",
+    "setting": "Urban",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Short",
+    "articulation": "Clear, shy about symptoms",
+    "language_mix": "Bengali",
+    "pre_visit_action": "None",
+    "specific_concern": "Burning urination, frequency"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া... প্রস্রাবে সমস্যা।\nডাক্তার: কী রকম?\nরোগী: জ্বালা পোড়া। বার বার যাইতে হয়।\nডাক্তার: কতদিন?\nরোগী: ৩ দিন।\nডাক্তার: রক্ত? ঘোলা?\nরোগী: একটু ঘোলা। রক্ত মনে হয় না।\nডাক্তার: কোমরের পিছনে ব্যথা?\nরোগী: না।\nডাক্তার: জ্বর?\nরোগী: হালকা গরম, ৯৯-১০০।\nডাক্তার: বমি, পেট ব্যথা?\nরোগী: না।\nডাক্তার: প্রস্রাবের শেষে ব্যথা বেশি?\nরোগী: হ্যাঁ।\nডাক্তার: পরিমাণ কম, বার বার?\nরোগী: হ্যাঁ। দিনে ১০-১২ বার।\nডাক্তার: আগে হইছিল?\nরোগী: ২ বার গত বছর।\nডাক্তার: Diabetes?\nরোগী: না।\nডাক্তার: Sexually active?\nরোগী: জ্বী।\nডাক্তার: ঠিক আছে। এটা cystitis - lower UTI।\nডাক্তার: Urine R/E + C/S করি আজ। Sample দিতে পারবেন এক ঘন্টা পর।\nডাক্তার: Antibiotic আজ থেকেই ৫ দিন।\nডাক্তার: পানি বেশি, ৩ litre।\nডাক্তার: প্রস্রাব আটকাইয়া রাখবেন না।\nডাক্তার: যৌন সঙ্গমের পরে urine pass করবেন।\nডাক্তার: ৫ দিনে ভাল না হলে আসবেন, culture report অনুযায়ী change।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Dysuria (burning urination), worse at end of voiding", "duration": "3 days"},
+      {"complaint": "Increased frequency (10-12 times/day) with low-volume voids", "duration": "3 days"},
+      {"complaint": "Cloudy urine, low-grade fever (99-100°F)"}
+    ],
+    "history": [
+      "Two prior UTI episodes in last year",
+      "Sexually active",
+      "No diabetes, no flank pain, no vomiting",
+      "Urine appears cloudy without overt hematuria"
+    ],
+    "summary": "A 32-year-old female housewife with classical clinical features of acute uncomplicated lower urinary tract infection — 3-day history of dysuria (worse at end of voiding), increased frequency with low-volume voids, cloudy urine, and low-grade fever. No upper tract features (no flank pain, no vomiting, no high fever). History of recurrent UTI (2 in last year). Sexually active. Empirical antibiotic treatment with concurrent urine culture is appropriate; recurrent UTI pattern warrants behavioral counseling.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Lower Urinary Tract Infection (Acute Uncomplicated Cystitis)",
+        "icd_code": "N30.0",
+        "confidence": 92,
+        "reasoning": "Classic dysuria, frequency, suprapubic discomfort with low-grade fever in a sexually active woman; no upper tract features."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Nitrofurantoin 100mg", "trade_name": "Macrobid 100 / Nitrofur 100", "dosage": "1 tablet", "routine": {"gap_hours": 12}, "duration": "5 days", "purpose": "First-line antibiotic for uncomplicated cystitis with low resistance profile"},
+      {"generic_name": "Paracetamol 500mg", "trade_name": "Napa 500", "dosage": "1 tablet", "routine": {"as_needed": "for pain or fever"}, "duration": "PRN", "purpose": "Symptomatic relief"}
+    ],
+    "investigations": [
+      {"investigation_name": "Urine R/E + C/S", "reasoning": "Confirm infection, identify organism and antibiotic sensitivity given recurrent UTI history"}
+    ],
+    "advice": [
+      "Drink at least 3 liters of water daily",
+      "Pass urine after sexual intercourse — important to prevent recurrence",
+      "Do not hold urine; pass when urge develops",
+      "Front-to-back wiping; maintain perineal hygiene",
+      "Return in 5 days with culture report; come immediately if fever rises, flank pain, or vomiting develops"
+    ]
+  }
+}

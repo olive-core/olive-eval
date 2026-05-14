@@ -1,0 +1,61 @@
+{
+  "id": "case_13",
+  "description": "22 y/o male university student in hostel with 7-day stepwise fever, GI symptoms, constipation, rose spots, hepatosplenomegaly. Unsafe water and street food history. Classical enteric fever.",
+  "parameters": {
+    "category": "Acute Respiratory/Fever",
+    "age": 22,
+    "sex": "Male",
+    "education": "Higher (University student)",
+    "occupation": "Student",
+    "setting": "Urban (hostel)",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Clear",
+    "language_mix": "Banglish",
+    "pre_visit_action": "Self-taking Paracetamol; NS1 dengue done — negative",
+    "specific_concern": "Fever × 7 days not improving"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া, ৭ দিন ধরে জ্বর। কমতেছে না।\nডাক্তার: কেমন? Pattern?\nরোগী: ১০২-১০৩। সন্ধ্যা-রাতে বাড়ে। Napa দিলে সাময়িক কমে, আবার বাড়ে।\nডাক্তার: শরীর ব্যথা?\nরোগী: হ্যাঁ, generalized body ache, মাথা ব্যথা।\nডাক্তার: পেট ব্যথা? Diarrhea?\nরোগী: পেটে একটু অস্বস্তি। Constipation - ৩-৪ দিন পায়খানা হয় নাই।\nডাক্তার: বমি?\nরোগী: ২ বার।\nডাক্তার: কাশি, শ্বাসকষ্ট?\nরোগী: না।\nডাক্তার: ক্ষুধা?\nরোগী: একদম না।\nডাক্তার: দুর্বলতা?\nরোগী: অনেক। বিছানায় শুইয়া থাকি।\nডাক্তার: কোথায় থাকেন? পানি কেমন?\nরোগী: Hostel। Tap water boil না করে খাইছিলাম মাঝে মাঝে। Rickshaw food, fuchka।\nডাক্তার: NS1 dengue?\nরোগী: Negative।\nডাক্তার: Widal?\nরোগী: করি নাই।\n[Examination]\nডাক্তার: Liver-spleen mildly enlarged। হাতে গোলাপি rash - rose spots। Pulse ৮২ - relative bradycardia।\nডাক্তার: ৭ দিনের stepwise fever, GI symptoms, constipation, hepatosplenomegaly, rose spots, contaminated water/food - typical enteric fever (typhoid)।\nডাক্তার: Confirm করতে blood culture, Widal, CBC, SGPT আজই।\nডাক্তার: Treatment আজই শুরু - waiting এ থাকব না।\nডাক্তার: Ceftriaxone IV, daily injection clinic এ ১০-১৪ দিন।\nরোগী: Hospital ভর্তি?\nডাক্তার: যদি vomiting বেশি, dehydration হয় তখন। এখন daily IV antibiotic এ চলবে।\nডাক্তার: হালকা খাবার - khichuri, soft food। মশলা/oily বন্ধ। পানি only boiled or bottled।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Stepwise high-grade fever with evening rise", "duration": "7 days"},
+      {"complaint": "Generalized body ache and headache", "duration": "7 days"},
+      {"complaint": "Constipation (3-4 days no bowel movement) with mild abdominal discomfort"},
+      {"complaint": "Anorexia, weakness, 2 episodes of vomiting"}
+    ],
+    "history": [
+      "University hostel resident",
+      "Frequent consumption of unboiled tap water and street food (rickshaw food, fuchka)",
+      "NS1 dengue antigen — NEGATIVE",
+      "Taking Paracetamol with transient response",
+      "On examination: relative bradycardia (pulse 82 with high fever), mild hepatosplenomegaly, rose spots on trunk"
+    ],
+    "summary": "A 22-year-old male university student in hostel with classical clinical features of enteric (typhoid) fever — 7 days of stepwise high-grade fever with evening rise, generalized body ache, headache, constipation with abdominal discomfort, anorexia, vomiting, and weakness. Clear epidemiological exposure (unboiled tap water and street food). On examination, relative bradycardia for fever, mild hepatosplenomegaly, and rose spots — all highly suggestive of enteric fever. NS1 dengue negative excludes alternative endemic diagnosis. Treatment should commence empirically with parenteral third-generation cephalosporin alongside confirmatory cultures.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Enteric Fever (Typhoid) — clinical diagnosis",
+        "icd_code": "A01.0",
+        "confidence": 90,
+        "reasoning": "Classical clinical picture with stepwise fever × 7 days, GI symptoms, constipation, hepatosplenomegaly, rose spots, relative bradycardia in a young patient with clear exposure history. NS1 dengue negative."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Ceftriaxone 2g", "trade_name": "Cef-3 2g / Ceftron 2g", "dosage": "1 vial IV", "routine": {"per_day": "Once daily as IV injection"}, "duration": "10-14 days", "purpose": "Parenteral third-generation cephalosporin — first-line for enteric fever"},
+      {"generic_name": "Paracetamol 500mg", "trade_name": "Napa 500 / Ace 500", "dosage": "1 tablet", "routine": {"as_needed": "for fever >100°F, max 4 times daily"}, "duration": "Until fever subsides", "purpose": "Antipyretic"}
+    ],
+    "investigations": [
+      {"investigation_name": "Blood Culture and Sensitivity", "timing": "DRAW BEFORE first antibiotic dose", "reasoning": "Gold standard for confirming enteric fever and guiding antibiotic choice — must be drawn before antibiotics start, otherwise yield drops dramatically"},
+      {"investigation_name": "CBC", "reasoning": "Look for leukopenia with eosinopenia typical of enteric fever"},
+      {"investigation_name": "SGPT", "reasoning": "Mild hepatitis common in enteric fever"},
+      {"investigation_name": "Widal Test (low priority)", "reasoning": "Supportive only — low sensitivity/specificity and overrelied upon in BD; do not let Widal alone guide management"}
+    ],
+    "advice": [
+      "Drink only boiled or bottled water — strict water hygiene from now",
+      "Avoid street food, especially rickshaw food and fuchka",
+      "Light easily digestible diet — khichuri, soft foods; no spicy/oily food",
+      "Come daily for IV injection at clinic; complete the full 10-14 day course",
+      "Return immediately if severe abdominal pain, blood in stool, persistent vomiting, or altered mental status develops (warning signs for complications)"
+    ]
+  }
+}

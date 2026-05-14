@@ -1,0 +1,62 @@
+{
+  "id": "case_21",
+  "description": "23 y/o female university student with classical PCOS — oligomenorrhea, hirsutism, acne, weight gain, acanthosis nigricans. Mother concerned about future marriage and fertility. Father has DM (familial insulin resistance).",
+  "parameters": {
+    "category": "Women's Health",
+    "age": 23,
+    "sex": "Female",
+    "education": "Higher (University)",
+    "occupation": "Student",
+    "setting": "Urban",
+    "companion": "Mother",
+    "visit_type": "New",
+    "length": "Long",
+    "articulation": "Mixed (patient minimal, mother verbose)",
+    "language_mix": "Mixed Bengali",
+    "pre_visit_action": "Various skin treatments without benefit",
+    "specific_concern": "Mother concerned about marriage prospects and fertility"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nমা: ভাইয়া আমার মেয়ের period অনিয়মিত। ওজন বাড়তেছে। মুখে অনেক pimple।\nডাক্তার: তোমার বয়স?\nরোগী: ২৩।\nডাক্তার: কতদিন এই সমস্যা?\nরোগী: ২-৩ বছর।\nডাক্তার: Period শুরু কত বছরে?\nরোগী: ১৩ বছর।\nডাক্তার: প্রথমে regular ছিল?\nরোগী: হ্যাঁ, ২৮-৩০ দিনে।\nডাক্তার: এখন?\nরোগী: ২-৩ মাস পর পর। কখনো ৪ মাসও।\nডাক্তার: Flow?\nরোগী: কখনো heavy, কখনো spotting।\nমা: ভাইয়া এর কারণে চিন্তা। আগামী বছর বিয়ে দিতে চাই।\nরোগী: মা... এটা ভাইয়াকে বলো না।\nডাক্তার: ঠিক আছে। ওজন বাড়ছে কতটুকু?\nরোগী: ২ বছরে ১০ kg।\nডাক্তার: এখন কত?\nরোগী: ৭০ kg, ৫'৩\"।\nডাক্তার: BMI ২৭.৩, overweight।\nডাক্তার: ওজন কোথায় বেশি?\nরোগী: পেটে।\nডাক্তার: Acne কোথায়?\nরোগী: মুখে, পিঠে।\nডাক্তার: ঠোঁটের উপরে, চিবুকে চুল?\nরোগী: হ্যাঁ। Threading করি weekly।\nডাক্তার: চুল পড়ে?\nরোগী: পড়ে অনেক।\nডাক্তার: ঘাড়, বগল কালো?\nরোগী: হ্যাঁ! ঘাড়ের পিছনে কালো।\nডাক্তার: এটা acanthosis nigricans - insulin resistance এর sign।\nডাক্তার: পরিবারে diabetes, thyroid?\nরোগী: বাবার diabetes।\nডাক্তার: Exercise, food?\nরোগী: Student. Exercise নাই। Junk food অনেক। চা ৪-৫ কাপ চিনি দিয়া।\n[Examination]\nডাক্তার: Hirsutism mild upper lip, chin। Moderate acne. Acanthosis nigricans neck।\nডাক্তার: তোমার সবগুলো feature PCOS এর সাথে match - oligomenorrhea, hyperandrogenism (acne, hirsutism), probable polycystic ovary।\nমা: Serious?\nডাক্তার: Lifelong condition। কিন্তু manage করলে normal pregnancy, regular period সব সম্ভব।\nডাক্তার: কিছু test - TSH, Prolactin, LH, FSH, Testosterone, HbA1c, Fasting Insulin, Lipid। USG of pelvis।\nডাক্তার: Treatment - সবচেয়ে important weight loss। ৫-১০ kg কমলে অনেক ভালো।\nডাক্তার: Diet - low carb, ভাত কম, sugar বন্ধ, junk বন্ধ। Exercise ৪০ মিনিট daily।\nডাক্তার: Metformin দিচ্ছি - insulin resistance এর জন্য, weight loss এ help।\nমা: বিয়ের পর pregnancy?\nডাক্তার: হ্যাঁ, একটু কঠিন হইতে পারে। PCOS এ ovulation irregular। সাহায্যকারী medicine লাগে অনেক সময়। কিন্তু সম্ভব।\nডাক্তার: ৩ সপ্তাহ পর report নিয়া আসেন।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Oligomenorrhea (cycles every 2-4 months)", "duration": "2-3 years (was regular since menarche at 13)"},
+      {"complaint": "Central weight gain (10 kg over 2 years)", "duration": "2 years"},
+      {"complaint": "Acne on face and back", "duration": "Progressive"},
+      {"complaint": "Hirsutism (upper lip, chin) and hair fall from scalp"}
+    ],
+    "history": [
+      "Father has T2DM (family history of insulin resistance)",
+      "Sedentary student lifestyle; high junk food and sugary tea consumption",
+      "Acanthosis nigricans on posterior neck (clinical marker of insulin resistance)",
+      "BMI 27.3 (overweight), central distribution",
+      "No medications; menarche at 13 with initial regular cycles"
+    ],
+    "summary": "A 23-year-old female university student with classical features of Polycystic Ovary Syndrome — oligomenorrhea (cycles every 2-4 months) for 2-3 years, central weight gain (10 kg in 2 years), hirsutism (upper lip, chin), moderate acne, scalp hair loss, and clinically evident insulin resistance (acanthosis nigricans). Strong family history of T2DM (father). Meets Rotterdam criteria clinically (oligo-anovulation + hyperandrogenism). Requires confirmatory hormonal workup, USG of pelvis, and metabolic screening. Mainstay of management is lifestyle modification and metformin for insulin resistance. Fertility preservation/preparation discussion appropriate given family marriage timeline.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Polycystic Ovary Syndrome (PCOS) with Insulin Resistance",
+        "icd_code": "E28.2",
+        "confidence": 90,
+        "reasoning": "Meets Rotterdam criteria (oligomenorrhea + hyperandrogenism) with insulin resistance markers (central obesity, acanthosis nigricans, family history of T2DM). Pelvic USG pending for full criteria."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Metformin 500mg", "trade_name": "Comet 500 / Diabet-M 500", "dosage": "1 tablet (start), titrate up to 2 tablets BD over 2 weeks", "routine": {"meal_times": ["after_breakfast", "after_dinner"]}, "duration": "Continue (long-term)", "purpose": "Insulin sensitizer — improves ovulation, helps weight loss, reduces hyperandrogenism"}
+    ],
+    "investigations": [
+      {"investigation_name": "TSH, FT4", "reasoning": "Exclude thyroid dysfunction as cause of menstrual irregularity"},
+      {"investigation_name": "Serum Prolactin", "reasoning": "Exclude hyperprolactinemia as differential"},
+      {"investigation_name": "LH, FSH, Total Testosterone", "reasoning": "Hormonal profile for PCOS confirmation"},
+      {"investigation_name": "HbA1c and Fasting Insulin", "reasoning": "Screen for impaired glucose tolerance and quantify insulin resistance"},
+      {"investigation_name": "Lipid Profile", "reasoning": "Metabolic syndrome screening"},
+      {"investigation_name": "USG of Pelvis (Transabdominal)", "reasoning": "Identify polycystic ovarian morphology — completes Rotterdam criteria"}
+    ],
+    "advice": [
+      "Lifestyle modification is the single most important treatment — 5-10 kg weight loss can restore regular cycles",
+      "Low-carbohydrate diet: limit rice, stop sugary tea, eliminate junk food; increase protein and vegetables",
+      "Exercise 40 minutes daily, 5 days a week (combination of cardio and resistance)",
+      "PCOS is treatable — regular cycles and successful pregnancy are achievable with management",
+      "Return in 3 weeks with all reports for diagnostic confirmation and treatment plan refinement"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "case_02",
+  "description": "45 y/o male businessman with 3-4 month progressive GERD, brother died of stomach cancer last year (high anxiety). Smoker. Needs endoscopy given age + family history.",
+  "parameters": {
+    "category": "APD/GERD/FD",
+    "age": 45,
+    "sex": "Male",
+    "education": "Secondary (HSC)",
+    "occupation": "Businessman",
+    "setting": "Urban",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Verbose, scattered",
+    "language_mix": "Mixed Bengali",
+    "pre_visit_action": "Multiple OTC PPIs from pharmacy",
+    "specific_concern": "Brother died of stomach cancer at 50 last year — carcinophobia"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন। বলুন কী সমস্যা।\nরোগী: ভাইয়া, পেটে অনেক সমস্যা। বুক জ্বালা পোড়া, টক ঢেঁকুর, gas।\nডাক্তার: কতদিন ধরে?\nরোগী: প্রায় ৩-৪ মাস। প্রথমে কম ছিল, এখন বেড়েই চলছে।\nডাক্তার: বুক জ্বালা কখন বেশি হয়?\nরোগী: খাওয়ার পরে, এবং রাতে শুতে গেলে। ঘুম থেকে উঠে মুখে টক স্বাদ।\nডাক্তার: বুকে ব্যথা আছে?\nরোগী: হ্যাঁ ভাইয়া, বুকের মাঝখানে - জ্বালা। কখনো মনে হয় heart এর সমস্যা। আমার ভাইয়ের stomach cancer ছিল, তাই অনেক চিন্তিত।\nডাক্তার: ভাই কত বছর বয়সে?\nরোগী: ৫০ বছর। গত বছর মারা গেছে।\nডাক্তার: ও আচ্ছা। ওজন কমেছে?\nরোগী: না, ওজন ঠিকই আছে।\nডাক্তার: বমি, রক্ত, পায়খানা কালো?\nরোগী: না, এসব কিছু না।\nডাক্তার: গিলতে অসুবিধা?\nরোগী: না।\nডাক্তার: ধূমপান?\nরোগী: হ্যাঁ, ১৫-২০ বছর। দিনে ১০-১২টা।\nডাক্তার: চা-কফি?\nরোগী: সারাদিন আউটসাইডে। চা ৬-৭ কাপ, কফি ২-৩ কাপ।\nডাক্তার: late dinner?\nরোগী: হ্যাঁ, ১১-১২টা।\nডাক্তার: pharmacy থেকে কী খেয়েছেন?\nরোগী: Maxpro, Pantonix, antacid। কাজ হয় কিছুদিন, আবার শুরু।\nডাক্তার: এটা GERD - reflux disease। ভাইয়ের cancer এর সাথে আপনার সমস্যার hereditary connection সাধারণত না। কিন্তু আপনার বয়স ৪৫, ৩ মাস ধরে symptoms, family history - একবার endoscopy করা ভালো।\nরোগী: cancer test করা লাগব?\nডাক্তার: Endoscopy তেই দেখা যাবে। এই বয়সে cancer এর সম্ভাবনা কম, কিন্তু rule out করব।\nডাক্তার: আর সবচেয়ে important - smoking ছাড়েন। GERD এর জন্য খুব ক্ষতিকর। চা-কফি কমাবেন। রাতে আগে খাবেন।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Retrosternal burning and chest discomfort", "duration": "3-4 months", "timing": "Postprandial, worse at night"},
+      {"complaint": "Sour regurgitation", "duration": "3-4 months", "timing": "Morning"},
+      {"complaint": "Belching and bloating", "duration": "3-4 months"}
+    ],
+    "history": [
+      "Symptoms progressive over 3-4 months",
+      "Brother died of gastric carcinoma at age 50 (1 year ago) — significant carcinophobia",
+      "Smoker × 15-20 years (10-12 sticks/day)",
+      "High caffeine intake (6-7 cups tea + 2-3 cups coffee daily)",
+      "Late dinner habit (11-12 PM)",
+      "No alarm features — no weight loss, no dysphagia, no melena"
+    ],
+    "summary": "A 45-year-old businessman with 3-4 month progressive GERD symptoms — retrosternal burning, sour regurgitation, and post-prandial chest discomfort. Heavy smoker with high caffeine intake and late dinners. Brother died of gastric carcinoma at 50 one year ago, causing significant health anxiety. No alarm features clinically. Age >40 with chronic symptoms and family history of gastric malignancy warrants upper GI endoscopy.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Gastroesophageal Reflux Disease (GERD)",
+        "icd_code": "K21.9",
+        "confidence": 88,
+        "reasoning": "Classic postprandial retrosternal burning, sour regurgitation, nocturnal worsening, multiple lifestyle risk factors. Partial response to PPI."
+      }
+    ],
+    "medicines": [
+      {
+        "generic_name": "Esomeprazole 40mg",
+        "trade_name": "Sergel 40 / Maxpro 40",
+        "dosage": "1 tablet",
+        "routine": {"meal_times": ["before_breakfast"]},
+        "duration": "8 weeks",
+        "purpose": "PPI for symptom control and mucosal healing"
+      }
+    ],
+    "investigations": [
+      {
+        "investigation_name": "Upper GI Endoscopy",
+        "reasoning": "Age >40 with chronic GERD symptoms and first-degree family history of gastric cancer — indicated to rule out structural pathology"
+      }
+    ],
+    "advice": [
+      "Reassurance — chest burning is from acid reflux, not cardiac; endoscopy will rule out other concerns including malignancy",
+      "STOP smoking — most important step for GERD and cancer risk reduction",
+      "Take dinner at least 3 hours before sleeping; avoid eating after 9 PM",
+      "Reduce tea/coffee to maximum 2 cups daily combined",
+      "Return with endoscopy report in 2 weeks; come immediately if weight loss, vomiting, difficulty swallowing, or black stools develop"
+    ]
+  }
+}

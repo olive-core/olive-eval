@@ -1,0 +1,66 @@
+{
+  "id": "case_06",
+  "description": "52 y/o female housewife with newly diagnosed T2DM. Pharmacy RBS 320. Classic osmotic symptoms × 2-3 months. Strong family history (mother on insulin). Anxious about insulin.",
+  "parameters": {
+    "category": "Cardiometabolic",
+    "age": 52,
+    "sex": "Female",
+    "education": "Secondary",
+    "occupation": "Housewife",
+    "setting": "Urban",
+    "companion": "Spouse",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Anxious, asks many questions",
+    "language_mix": "Bengali with English (sugar, diabetes)",
+    "pre_visit_action": "Pharmacy RBS check showed 320",
+    "specific_concern": "Mother had DM on insulin — afraid of insulin"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া, আমার নাকি sugar বেশি। Pharmacy তে check করছিলাম, ৩২০।\nস্বামী: ভাইয়া, ও অনেক চিন্তিত। মা'র diabetes ছিল।\nডাক্তার: কী symptoms?\nরোগী: পানি অনেক তেষ্টা। বার বার প্রস্রাব - রাইতে ৩-৪ বার। ওজন কমে গেছে।\nডাক্তার: কতদিন?\nরোগী: ২-৩ মাস।\nডাক্তার: কত ওজন কমছে?\nরোগী: ৭০ ছিলাম, এখন ৬৬।\nডাক্তার: ক্লান্ত লাগে?\nরোগী: হ্যাঁ। কাজে শক্তি পাই না।\nডাক্তার: ক্ষত দেরি করে ভালো হয়?\nরোগী: পায়ে এক ফোঁড়া ৩ সপ্তাহ লাগছে।\nডাক্তার: চোখে problem? পায়ে ঝিম ঝিম?\nরোগী: না।\nডাক্তার: মা'র DM কত বয়সে?\nরোগী: ৪০ এর পর। শেষে insulin।\nডাক্তার: আপনার বয়স?\nরোগী: ৫২।\nডাক্তার: BP মাপি... ১৪০/৮৫।\nডাক্তার: ওজন আর height?\nরোগী: ৬৬, ৫'২\"।\nডাক্তার: BMI ২৬.৫।\nডাক্তার: আজ FBS, 2 hour after breakfast, HbA1c, Lipid, Urine R/E, S. Creatinine করব।\nরোগী: ভাইয়া insulin লাগব?\nডাক্তার: না, এখনই না। বয়স ৫২, type 2 - tablet দিয়া control করব। Insulin সাধারণত later stages।\nডাক্তার: কিন্তু এটা lifelong - নিয়মিত medicine, diet, exercise।\nস্বামী: আজই treatment?\nডাক্তার: হ্যাঁ। Pharmacy RBS ৩২০ - confirmed। Metformin start করছি।\nডাক্তার: প্রথম ২ সপ্তাহ একটু পেট অস্বস্তি হইতে পারে।\nডাক্তার: ভাত half plate এর বেশি না। মিষ্টি, ফলের রস বন্ধ। সবজি বেশি। ৩০ মিনিট হাঁটা daily।\nডাক্তার: ৩ দিন পর report নিয়া আসেন।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Polyuria with nocturia (3-4 times)", "duration": "2-3 months"},
+      {"complaint": "Polydipsia", "duration": "2-3 months"},
+      {"complaint": "Weight loss (4 kg over 2-3 months)", "duration": "2-3 months"},
+      {"complaint": "Fatigue and delayed wound healing", "duration": "2-3 months"}
+    ],
+    "history": [
+      "Pharmacy random blood sugar 320 mg/dL",
+      "Mother had T2DM, eventually required insulin",
+      "BMI 26.5 (mildly overweight), BP 140/85 today",
+      "No retinopathy or neuropathy symptoms"
+    ],
+    "summary": "A 52-year-old housewife presenting with classical osmotic symptoms — polyuria, polydipsia, unintentional weight loss, fatigue, and delayed wound healing over 2-3 months. Random pharmacy blood sugar of 320 mg/dL confirms hyperglycemia. Strong family history with mother having T2DM requiring insulin. BMI 26.5, BP mildly elevated at 140/85. No symptoms of microvascular complications yet. Picture consistent with newly diagnosed Type 2 Diabetes Mellitus. Anxious about insulin given mother's history — needs reassurance and patient education.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Type 2 Diabetes Mellitus — Newly Diagnosed",
+        "icd_code": "E11.9",
+        "confidence": 95,
+        "reasoning": "Classic osmotic symptoms with random pharmacy glucose >200 mg/dL (320) and weight loss in a 52-year-old with strong family history. Pending confirmation with FBS/HbA1c."
+      }
+    ],
+    "medicines": [
+      {
+        "generic_name": "Metformin 500mg",
+        "trade_name": "Comet 500 / Diabet-M 500",
+        "dosage": "1 tablet",
+        "routine": {"meal_times": ["after_breakfast", "after_dinner"]},
+        "duration": "Continue (long-term)",
+        "purpose": "First-line oral antidiabetic agent; insulin sensitizer with weight-neutral profile"
+      }
+    ],
+    "investigations": [
+      {"investigation_name": "FBS, 2h ABF, HbA1c", "reasoning": "Confirm diabetes and establish baseline glycemic status"},
+      {"investigation_name": "Lipid Profile", "reasoning": "Cardiovascular risk in new diabetic"},
+      {"investigation_name": "Urine R/E", "reasoning": "Baseline screen for proteinuria"},
+      {"investigation_name": "Serum Creatinine", "reasoning": "Renal baseline before metformin therapy"}
+    ],
+    "advice": [
+      "Strict diet — rice limited to half plate per meal, no sweets, no fruit juice, vegetables in abundance",
+      "Walk 30 minutes daily",
+      "Tablet treatment is sufficient at this stage — insulin not required now",
+      "Return after 3 days with all reports to confirm diagnosis and adjust treatment",
+      "Annual eye and foot examination once diagnosis confirmed"
+    ]
+  }
+}

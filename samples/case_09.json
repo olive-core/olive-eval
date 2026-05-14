@@ -1,0 +1,66 @@
+{
+  "id": "case_09",
+  "description": "65 y/o female with 8-10 year T2DM on Metformin only (never escalated, never tested HbA1c). Severe nocturnal foot paresthesia. Rural patient with adult son. Folk-language presentation.",
+  "parameters": {
+    "category": "Cardiometabolic",
+    "age": 65,
+    "sex": "Female",
+    "education": "None-Primary",
+    "occupation": "Housewife (rural)",
+    "setting": "Rural (came to Dhaka)",
+    "companion": "Adult son",
+    "visit_type": "Follow-up",
+    "length": "Medium",
+    "articulation": "Vague with folk terms",
+    "language_mix": "Pure Bengali (rural dialect)",
+    "pre_visit_action": "On Metformin 500mg BD × 8-10 years, never had HbA1c done",
+    "specific_concern": "Pain disturbing sleep"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, খালা। বসুন।\nরোগী: ভাইজান, পায়ে ঝিম ঝিম। জ্বালা পোড়া। ঘুমাইতে পারি না।\nছেলে: ভাইয়া, আম্মা'র অনেক দিনের সমস্যা। কয়েকজন ডাক্তার দেখাইছি, কেউ কিছু করে নাই।\nডাক্তার: কতদিন?\nছেলে: ৬-৭ মাস।\nডাক্তার: কোথায় ঝিম ঝিম?\nরোগী: পায়ের পাতা। হাতে আঙুলেও।\nডাক্তার: রাইতে বাড়ে?\nরোগী: হ্যাঁ ভাইজান। রাইতে চোখ বুজি না। চাদর লাগাইলে আরো লাগে।\nডাক্তার: খালা'র sugar আছে?\nছেলে: হ্যাঁ। ৮-১০ বছর।\nডাক্তার: কী medicine?\nছেলে: Metformin ৫০০, সকাল রাইতে।\nডাক্তার: শুধু এটাই?\nছেলে: জ্বী। গ্রামের ডাক্তার দিছিল।\nডাক্তার: HbA1c কখনো?\nছেলে: না ভাইয়া। গ্রামে এসব টেস্ট নাই।\nডাক্তার: আজ RBS... ২২০।\nডাক্তার: পায়ে ক্ষত?\nরোগী: না।\nডাক্তার: জুতা খুলেন... [Examination] পায়ের sensation কম। Monofilament feel করতেছেন না দু পায়ে।\nডাক্তার: চোখে কম দেখেন?\nরোগী: হ্যাঁ। Cataract বলছে।\nডাক্তার: এটা diabetic peripheral neuropathy - sugar বহু বছর uncontrolled থাকায় nerve damage।\nছেলে: ভালো হইব?\nডাক্তার: পুরা ভালো হইব না, কিন্তু control এ আসবে। Sugar control আগে। সাথে ব্যথার ওষুধ।\nডাক্তার: HbA1c, FBS, Creatinine, Urine ACR - সব test করি আজ। চোখের ডাক্তারের কাছে fundus দেখাইতে হইব।\nডাক্তার: Metformin সাথে Diamicron যোগ। ব্যথার জন্য Gabapentin রাতে।\nছেলে: কতদিন পর?\nডাক্তার: ১ মাস। সব report নিয়া। তখন insulin লাগব কিনা ভাবব।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Bilateral foot paresthesia and burning, also fingertips", "duration": "6-7 months", "timing": "Worse at night, allodynia (sheet contact aggravates)"},
+      {"complaint": "Insomnia from pain", "duration": "6-7 months"}
+    ],
+    "history": [
+      "T2DM × 8-10 years on Metformin 500mg BD only — never escalated",
+      "Never had HbA1c done (rural setting)",
+      "Today RBS 220 mg/dL",
+      "Known cataract (no detailed retinal exam done)",
+      "On examination: reduced monofilament sensation bilaterally; no foot ulcer"
+    ],
+    "summary": "A 65-year-old rural female with 8-10 year history of T2DM managed inadequately on Metformin monotherapy without ever undergoing HbA1c testing. Presents with classical bilateral nocturnal distal symmetric paresthesia and burning, with allodynia and significant sleep disturbance — consistent with diabetic peripheral neuropathy. Reduced monofilament sensation confirmed on examination. RBS 220 today suggests long-standing poor glycemic control. Known cataract but retinal status not properly assessed. Requires intensification of antidiabetic therapy, neuropathic pain management, and comprehensive screening for diabetic complications including retinopathy and nephropathy.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Type 2 Diabetes Mellitus — long-standing, uncontrolled",
+        "icd_code": "E11.9",
+        "confidence": 100,
+        "reasoning": "Established T2DM × 8-10 years on inadequate monotherapy with RBS 220 today."
+      },
+      {
+        "diagnosis_name": "Diabetic Peripheral Neuropathy",
+        "icd_code": "E11.42",
+        "confidence": 92,
+        "reasoning": "Classic stocking-glove distal symmetric paresthesia with nocturnal worsening and allodynia, reduced monofilament sensation, in long-standing uncontrolled T2DM."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Metformin 500mg", "trade_name": "Comet 500", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast", "after_dinner"]}, "duration": "Continue", "purpose": "Continue baseline antidiabetic"},
+      {"generic_name": "Gliclazide MR 30mg", "trade_name": "Diamicron MR 30", "dosage": "1 tablet", "routine": {"meal_times": ["before_breakfast"]}, "duration": "Continue", "purpose": "Add-on sulfonylurea for tighter glycemic control"},
+      {"generic_name": "Gabapentin 300mg", "trade_name": "Gabapen 300 / Neugaba 300", "dosage": "1 tablet at bedtime first 3 days, then 1 morning + 1 night", "routine": {"meal_times": ["after_dinner"]}, "duration": "4 weeks then reassess", "purpose": "Neuropathic pain control"}
+    ],
+    "investigations": [
+      {"investigation_name": "HbA1c", "reasoning": "Long overdue — establish glycemic baseline"},
+      {"investigation_name": "FBS", "reasoning": "Baseline before escalating therapy"},
+      {"investigation_name": "Serum Creatinine and Urine ACR", "reasoning": "Screen for diabetic nephropathy in long-standing uncontrolled DM"},
+      {"investigation_name": "Serum Vitamin B12", "reasoning": "Long-term Metformin use can cause B12 deficiency, which itself produces peripheral neuropathy — important differential/contributor"},
+      {"investigation_name": "Fundus examination by ophthalmologist", "reasoning": "Assess for diabetic retinopathy beyond known cataract"}
+    ],
+    "advice": [
+      "Take all medicines regularly without missing doses",
+      "Check feet daily for cuts, blisters, or color change — diabetic feet need protection",
+      "Avoid walking barefoot; wear soft footwear at all times",
+      "Return after 1 month with all reports — insulin will be considered if control remains poor"
+    ]
+  }
+}

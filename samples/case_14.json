@@ -1,0 +1,58 @@
+{
+  "id": "case_14",
+  "description": "35 y/o male, 4-day fever with confirmed NS1+ dengue. Entering critical phase. No warning signs yet. CBC: platelet 135k, WBC 3800. Outpatient management with daily monitoring.",
+  "parameters": {
+    "category": "Acute Respiratory/Fever",
+    "age": 35,
+    "sex": "Male",
+    "education": "Secondary",
+    "occupation": "Govt service",
+    "setting": "Urban (Dhaka)",
+    "companion": "Spouse",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Clear, direct",
+    "language_mix": "Mixed Bengali",
+    "pre_visit_action": "NS1 done — positive; taking Paracetamol q6h",
+    "specific_concern": "Aware of platelet drop risk; wants to know if hospitalization needed"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া, ৪ দিন ধরে জ্বর। আজ NS1 positive।\nডাক্তার: রিপোর্ট দেখি... NS1 positive। কত date এ শুরু?\nরোগী: সোমবার। আজ ৪র্থ দিন।\nডাক্তার: জ্বর কত?\nরোগী: শুরুতে ১০৩-১০৪। এখন ১০১।\nডাক্তার: শরীর ব্যথা?\nরোগী: Joint pain অনেক - কোমর, হাঁটু, কনুই। Retro-orbital pain।\nডাক্তার: Rash?\nরোগী: গতকাল থেকে বুকে, পেটে লাল লাল।\nডাক্তার: বমি?\nরোগী: ২-৩ বার। Nausea সবসময়।\nডাক্তার: পেট ব্যথা?\nরোগী: না।\nডাক্তার: রক্তক্ষরণ - মাড়ি, প্রস্রাব, কালো পায়খানা?\nরোগী: না।\nডাক্তার: কী medicine?\nরোগী: Napa ৬ ঘন্টা পর পর।\nডাক্তার: Aspirin, Brufen কেউ বলে নাই?\nরোগী: না, dengue এ ওগুলা না জানি।\nডাক্তার: পানি কেমন?\nস্ত্রী: ORS, ডাবের পানি, লেবু পানি জোর করে।\nডাক্তার: প্রস্রাব?\nরোগী: একটু কম, ৪-৫ বার।\nডাক্তার: CBC?\nরোগী: এই - WBC ৩৮০০, Platelet ১,৩৫,০০০, Hematocrit ৪৬।\nডাক্তার: এখন warning sign নাই। কিন্তু ৪র্থ দিন - আগামী ২-৩ দিন critical phase। Platelet drop হইতে পারে।\nরোগী: হাসপাতাল?\nডাক্তার: এখনই না। প্রতিদিন CBC। কিন্তু এই signs এ ভর্তি - severe abdominal pain, persistent vomiting, bleeding, restlessness, ঠাণ্ডা হাত-পা, প্রস্রাব ৬ ঘন্টা না হলে।\nস্ত্রী: বাসায় কী?\nডাক্তার: পানি ৩-৩.৫ litre। ORS ৩-৪ packet দিনে। প্রস্রাব ৪-৫ বার ভাল রং। Napa শুধু ১০০ এর উপরে, max ৪ বার দিনে।\nডাক্তার: Mosquito net এ ঘুমাবেন। বাসায় জমা পানি ফেলবেন - mosquito breeding।\nডাক্তার: কাল CBC repeat নিয়া আসবেন। ৭-১০ দিনে recovery।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "High-grade fever (peak 103-104°F, currently 101°F)", "duration": "4 days"},
+      {"complaint": "Severe generalized arthralgia and retro-orbital pain"},
+      {"complaint": "Maculopapular rash on trunk", "duration": "1 day"},
+      {"complaint": "Nausea and 2-3 episodes of vomiting; reduced urine output"}
+    ],
+    "history": [
+      "Onset Monday, presenting day 4 (Friday)",
+      "Local lab NS1 — POSITIVE",
+      "Today CBC: WBC 3800, Platelet 135,000, Hematocrit 46%",
+      "On Paracetamol q6h appropriately; correctly avoiding NSAIDs",
+      "No bleeding manifestations, no severe abdominal pain, adequate oral intake"
+    ],
+    "summary": "A 35-year-old male on day 4 of dengue fever (NS1 positive) with classical features and no current warning signs. CBC today shows leukopenia, platelet 135,000, and hematocrit 46% (baseline needed for plasma leakage assessment). Patient enters critical phase next 48-72 hours when platelet drop and plasma leakage may occur. Outpatient management with daily CBC monitoring and clear hospitalization criteria is appropriate.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Dengue Fever (NS1 positive) — entering critical phase",
+        "icd_code": "A90",
+        "confidence": 100,
+        "reasoning": "Confirmed NS1 antigen positive with classical dengue features in a Dhaka resident."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Paracetamol 500mg", "trade_name": "Napa 500 / Ace 500", "dosage": "1 tablet", "routine": {"gap_hours": 6, "as_needed": "if temperature >100°F, max 4 tablets/24h"}, "duration": "Until fever subsides", "purpose": "Antipyretic — only acceptable analgesic in dengue"},
+      {"generic_name": "Oral Rehydration Salt (ORS)", "trade_name": "ORSaline-N / SMC ORSaline", "dosage": "1 packet in 500ml water", "routine": {"per_day": "3-4 packets daily plus other fluids"}, "duration": "Until recovery", "purpose": "Hydration during critical phase"}
+    ],
+    "investigations": [
+      {"investigation_name": "CBC with Platelet count and Hematocrit", "frequency": "Daily until platelet trend reverses", "reasoning": "Monitor platelet drop and hemoconcentration during critical phase"}
+    ],
+    "advice": [
+      "STRICT bed rest; aggressive oral hydration — 3-3.5 liters daily (ORS, coconut water, fruit juice, soup)",
+      "Track urine output — must be at least 4-5 well-coloured voids per day",
+      "STRICTLY AVOID Aspirin, Ibuprofen (Brufen), Diclofenac — bleeding risk",
+      "Return IMMEDIATELY if: severe abdominal pain, persistent vomiting, any bleeding (gum/nose/urine/stool), restlessness, cold extremities, or no urine for >6 hours",
+      "Sleep under mosquito net and remove stagnant water at home"
+    ]
+  }
+}

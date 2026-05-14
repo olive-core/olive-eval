@@ -1,0 +1,65 @@
+{
+  "id": "case_17",
+  "description": "45 y/o male rickshaw puller, 10-12y BA, acute exacerbation triggered by URTI with chest infection. SpO2 89% on arrival. Poor inhaler technique discovered. Low-income — cost-conscious prescribing.",
+  "parameters": {
+    "category": "Asthma/AR",
+    "age": 45,
+    "sex": "Male",
+    "education": "Primary",
+    "occupation": "Rickshaw puller",
+    "setting": "Urban (low-income)",
+    "companion": "Spouse",
+    "visit_type": "Follow-up (acute exacerbation)",
+    "length": "Short",
+    "articulation": "Breathless, minimal speech",
+    "language_mix": "Pure Bengali",
+    "pre_visit_action": "Over-using Salbutamol inhaler (7-8/day vs usual 1-2)",
+    "specific_concern": "Inhaler not relieving; cost constraint"
+  },
+  "conversation": "ডাক্তার: আসুন আঙ্কেল, কী হইছে?\nরোগী: (হাঁপাতে) শ্বাস... কষ্ট...\nস্ত্রী: ভাইয়া ৩ দিন বাড়ছে। Inhaler নিতে নিতে শেষ।\nডাক্তার: কোন inhaler?\nস্ত্রী: Sultolin, Symbicort।\nডাক্তার: Sultolin কতবার?\nস্ত্রী: দিনে ৭-৮, রাইতেও ৩-৪।\nডাক্তার: আগে?\nস্ত্রী: ১-২ বার মাত্র।\nডাক্তার: কাশি? কফ?\nরোগী: কফ... হলুদ।\nডাক্তার: জ্বর?\nস্ত্রী: হালকা ২ দিন আগে।\n[Examination]\nডাক্তার: SPO2 ৮৯%। Pulse ১১৪, RR ২৮। Bilateral expiratory wheeze।\nডাক্তার: Oxygen কম। Nebulization এখনই।\nডাক্তার (assistant কে): Salbutamol + Ipratropium nebulization, oxygen ৪ litre।\n[Nebulization]\nডাক্তার: এখন SPO2 ৯৪%। Better।\nডাক্তার: কতদিন asthma?\nরোগী: ১০-১২ বছর।\nডাক্তার: ধূমপান?\nরোগী: ৪ বছর আগে ছাড়ছি।\nস্ত্রী: ১ সপ্তাহ আগে ঠাণ্ডা লাগছিল।\nডাক্তার: এটা acute exacerbation, URTI trigger। সাথে chest infection - হলুদ কফ।\nডাক্তার: Inhaler technique দেখান একটু।\n[রোগী দেখায়]\nডাক্তার: ভুল হইতেছে - শ্বাস ছাড়ার সাথে chap দিচ্ছেন। আগে full শ্বাস ছাড়বেন, তারপর slow শ্বাস টানার সাথে chap, ১০ সেকেন্ড hold।\nডাক্তার: Spacer use করবেন - ১৫০-২০০ টাকা।\nস্ত্রী: ভাইয়া কম দামের medicine।\nডাক্তার: Generic দিচ্ছি। Prednisolone ৫ দিন, Azithromycin ৫ দিন, Symbicort regular দু'বেলা, Sultolin PRN।\nডাক্তার: রিকশা চালানোর সময় mask পরবেন।\nডাক্তার: SPO2 ভালো এখন, বাসায় যাইতে পারবেন। কথা বলতে কষ্ট, ঠোঁট নীল হইলে immediately hospital।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Acute breathlessness with chest tightness", "duration": "3 days, worsening"},
+      {"complaint": "Productive cough with yellow sputum"},
+      {"complaint": "Excessive rescue inhaler use (7-8 puffs/day vs usual 1-2)"}
+    ],
+    "history": [
+      "Known bronchial asthma × 10-12 years",
+      "URTI 1 week ago — likely trigger",
+      "Ex-smoker (quit 4 years ago); occupational dust exposure (rickshaw puller)",
+      "POOR INHALER TECHNIQUE — actuating during exhalation",
+      "On arrival SpO2 89%, RR 28, HR 114, bilateral expiratory wheeze; responded to nebulization (SpO2 94%)"
+    ],
+    "summary": "A 45-year-old male rickshaw puller with 10-12 year BA presenting with 3-day acute exacerbation triggered by preceding URTI now complicated by likely bacterial chest infection (yellow sputum). Significant initial hypoxia (SpO2 89%) responding to bronchodilator nebulization (SpO2 94%). Critical finding — incorrect inhaler technique explaining prior poor control. Outpatient management appropriate with short-course systemic steroid, antibiotic, controller optimization, and most importantly technique correction with spacer use.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Bronchial Asthma — Acute Moderate-to-Severe Exacerbation",
+        "icd_code": "J45.901",
+        "confidence": 95,
+        "reasoning": "Known asthmatic with initial SpO2 89% (significant hypoxia), tachypnea, bilateral expiratory wheeze, and excessive reliever use, responding to bronchodilator nebulization with SpO2 rising to 94%."
+      },
+      {
+        "diagnosis_name": "Lower Respiratory Tract Infection (likely bacterial) — exacerbation trigger",
+        "icd_code": "J22",
+        "confidence": 70,
+        "reasoning": "Yellow purulent sputum with preceding URTI and low-grade fever."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Budesonide 200mcg + Formoterol 6mcg MDI", "trade_name": "Symbicort 200/6 / Combicort 200/6", "dosage": "2 puffs", "routine": {"meal_times": ["morning", "night"]}, "duration": "Continue regularly long-term", "purpose": "ICS-LABA controller — REGULAR USE not PRN"},
+      {"generic_name": "Salbutamol 100mcg MDI", "trade_name": "Sultolin / Asmanyl", "dosage": "2 puffs", "routine": {"as_needed": "for breathlessness only, max 4 times/day"}, "duration": "PRN (rescue)", "purpose": "Reliever"},
+      {"generic_name": "Prednisolone 20mg", "trade_name": "Cortan 20 / Predone 20", "dosage": "2 tablets (40mg)", "routine": {"meal_times": ["after_breakfast"]}, "duration": "5 days (no taper)", "purpose": "Short course systemic corticosteroid for exacerbation"},
+      {"generic_name": "Azithromycin 500mg", "trade_name": "Zimax 500 / Azin 500", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast"]}, "duration": "5 days", "purpose": "Antibiotic for likely bacterial lower respiratory infection"}
+    ],
+    "investigations": [
+      {"investigation_name": "Chest X-Ray PA view", "reasoning": "Rule out pneumonia or pneumothorax in acute exacerbation with purulent sputum"}
+    ],
+    "advice": [
+      "Observe in chamber for 30-60 minutes after nebulization; recheck SpO2 before discharge — admit to hospital if SpO2 drops below 92% again",
+      "USE A SPACER with inhaler (cost 150-200 BDT) — dramatically improves drug delivery",
+      "Correct inhaler technique: breathe out fully → press while slowly breathing in → hold breath 10 seconds",
+      "Take Symbicort EVERY DAY morning and night — even when feeling well",
+      "Go DIRECTLY to hospital (not back to chamber) if: cannot complete a sentence, blue lips, drowsiness, or no relief after 4 Sultolin puffs"
+    ]
+  }
+}

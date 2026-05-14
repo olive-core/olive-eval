@@ -1,0 +1,69 @@
+{
+  "id": "case_03",
+  "description": "38 y/o female housewife with 8-month functional dyspepsia overlaid with significant carcinophobia following father-in-law's death from gastric cancer. Multiple prior workups normal. LAYER 00 STRESS TEST.",
+  "parameters": {
+    "category": "APD/GERD/FD",
+    "age": 38,
+    "sex": "Female",
+    "education": "Secondary",
+    "occupation": "Housewife",
+    "setting": "Urban (Dhaka)",
+    "companion": "Adult daughter",
+    "visit_type": "New (third+ doctor)",
+    "length": "Long",
+    "articulation": "Vague, anxious, repetitive",
+    "language_mix": "Pure Bengali",
+    "pre_visit_action": "Multiple prior doctors; endoscopy / USG / H. pylori / ECG / Echo / TSH — all normal; on multiple medications",
+    "specific_concern": "Fears stomach cancer (recent family death from same)"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন। কী সমস্যা?\nরোগী: ভাইয়া, অনেক সমস্যা... কোথা থেকে শুরু বুঝি না...\nমেয়ে: মা গুছিয়ে বলো। আমি বলি ভাইয়াকে?\nরোগী: না, আমি বলি। পেটে অনেক গ্যাস। সবসময় ভরা ভরা লাগে। কিছু খাইতে পারি না।\nডাক্তার: কতদিন?\nরোগী: অনেকদিন... ৬-৭ মাস। বা বেশি।\nমেয়ে: ৮ মাস ভাইয়া। মা'র শ্বশুর - আমার দাদু - মারা যাওয়ার পর।\nডাক্তার: শ্বশুর কী কারণে?\nমেয়ে: গ্যাস্ট্রিক থেকে শুরু। পরে stomach cancer। ৩ মাসে মারা যান।\nডাক্তার: তো আপনি এই কারণে চিন্তিত?\nরোগী: ভাইয়া... মাঝে মাঝে মনে হয় আমারও সেরকম কিছু...\nডাক্তার: ব্যথা কেমন?\nরোগী: পেটের উপরে চেপে ধরে থাকে। জ্বালা পোড়া কখনো। ফোলা ভাব।\nডাক্তার: খাওয়ার সাথে?\nরোগী: দু লোকমা খেলেই ভরা মনে হয়। বেশি খাইতে পারি না।\nডাক্তার: ওজন?\nরোগী: ৩ kg কমছে।\nমেয়ে: ভাইয়া এটা খাওয়া কম এর জন্য। মা ভয়ে খেতে পারে না।\nডাক্তার: ঘুম? বুক ধড়ফড়?\nরোগী: ঘুম হয় না। হঠাৎ বুক ধড়ফড়।\nডাক্তার: কী খাইতে পারেন?\nরোগী: হালকা সাদা। ভাত কম, ঝাল-তেল কিছুই না।\nডাক্তার: বমি? কালো পায়খানা?\nরোগী: না।\nডাক্তার: আগে কোন ডাক্তার?\nমেয়ে: অনেক জায়গায়। USG, endoscopy, blood test - সব normal।\nডাক্তার: Endoscopy report দেখান... mild gastritis, biopsy benign। H. pylori negative। ECG, Echo?\nমেয়ে: হ্যাঁ, সব normal।\nডাক্তার: TSH?\nমেয়ে: ১ বছর আগে normal।\nডাক্তার: এখন কী medicine?\nমেয়ে: Sergel 40, Filmet, Pepsid - অনেক একসাথে।\nডাক্তার: Husband, পরিবার?\nরোগী: Husband কাজে busy। সারাদিন একা।\nডাক্তার: হঠাৎ অনেক ভয়, শ্বাস বন্ধ মনে হওয়া, panic এর মতন?\nরোগী: হ্যাঁ ভাইয়া। বুক ধড়ফড়, কাঁপুনি, পেট মোচড়ায়। ১৫-২০ মিনিট থাকে।\nডাক্তার: কতবার এমন?\nরোগী: সপ্তাহে ২-৩ বার।\nডাক্তার: দেখুন - এটা functional dyspepsia। সাথে anxiety - শ্বশুরের মৃত্যুর কারণে carcinophobia, মানে cancer এর ভয়।\nরোগী: ভাইয়া আমার cancer হচ্ছে না তো?\nডাক্তার: না। সব test clear। ৩ মাস আগের endoscopy ও clear। কিন্তু এই অসুখের চিকিৎসা গ্যাস্ট্রিকের ওষুধের সাথে মন-শরীর দুটোরই।\nমেয়ে: তাহলে কী করব?\nডাক্তার: আগের অনেক medicine বন্ধ। Sergel 20 continue, Itopride 4 সপ্তাহ। সাথে Escitalopram 5mg start করছি - anti-anxiety। ১ সপ্তাহ Clonazepam 0.25 ঘুমের জন্য।\nরোগী: আমি কি পাগল?\nডাক্তার: একদম না। Common condition, treatable। ২-৩ সপ্তাহে effect শুরু।\nডাক্তার: TSH আবার করি, CBC। Endoscopy আবার না - ৩ মাস আগে clear ছিল।\nডাক্তার: ১ মাস পর আসবেন।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Epigastric pressure-like discomfort with bloating", "duration": "8 months"},
+      {"complaint": "Early satiety with reduced food intake", "duration": "8 months"},
+      {"complaint": "Mild weight loss (3 kg, attributed to reduced intake)"},
+      {"complaint": "Panic-like episodes with palpitations and breathlessness (2-3 times per week)"},
+      {"complaint": "Insomnia with intrusive worry"}
+    ],
+    "history": [
+      "Symptom onset following father-in-law's death from gastric cancer 8 months ago",
+      "Endoscopy with biopsy 3 months ago — mild gastritis only, benign; H. pylori negative",
+      "USG, ECG, Echo all normal; TSH normal 1 year ago",
+      "On multiple PPIs / Metronidazole / Famotidine with minimal sustained benefit",
+      "Husband works long hours; patient is alone at home most of the day",
+      "No alarm features"
+    ],
+    "summary": "A 38-year-old housewife with 8-month history of functional dyspepsia overlaid with significant generalized anxiety and carcinophobia following her father-in-law's death from gastric cancer. Extensive prior workup (endoscopy with biopsy, USG, ECG, Echo, H. pylori, TSH) all normal. Multiple PPI courses have failed to relieve symptoms. Panic-like episodes 2-3 times weekly and persistent insomnia indicate prominent anxiety component. Repeat endoscopy not indicated. SSRI-based treatment of the anxiety component is essential alongside symptomatic dyspepsia management.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Functional Dyspepsia (Postprandial Distress Syndrome)",
+        "icd_code": "K30",
+        "confidence": 88,
+        "reasoning": "Chronic epigastric symptoms with early satiety >6 months, normal endoscopy with biopsy, H. pylori negative. Meets Rome IV criteria."
+      },
+      {
+        "diagnosis_name": "Generalized Anxiety Disorder with Panic Features and Carcinophobia",
+        "icd_code": "F41.1",
+        "confidence": 85,
+        "reasoning": "Onset triggered by bereavement, panic-like episodes, persistent illness anxiety despite normal investigations, sleep disturbance."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Esomeprazole 20mg", "trade_name": "Sergel 20 / Maxpro 20", "dosage": "1 tablet", "routine": {"meal_times": ["before_breakfast"]}, "duration": "8 weeks then taper", "purpose": "Lower-dose PPI de-escalation"},
+      {"generic_name": "Itopride 50mg", "trade_name": "Itorid 50", "dosage": "1 tablet", "routine": {"meal_times": ["before_breakfast", "before_lunch", "before_dinner"]}, "duration": "4 weeks", "purpose": "Prokinetic for postprandial distress"},
+      {"generic_name": "Escitalopram 5mg", "trade_name": "Esita 5 / Cipalex 5", "dosage": "1 tablet (start with 5mg × 1 week, then 10mg)", "routine": {"meal_times": ["after_breakfast"]}, "duration": "Minimum 6 months", "purpose": "SSRI for underlying anxiety and functional dyspepsia central modulation"},
+      {"generic_name": "Clonazepam 0.25mg", "trade_name": "Rivotril 0.25", "dosage": "1 tablet at night", "routine": {"meal_times": ["after_dinner"]}, "duration": "1 week only (bridge)", "purpose": "Short-term sleep and panic bridge until SSRI takes effect"}
+    ],
+    "investigations": [
+      {"investigation_name": "TSH", "reasoning": "Repeat after 1 year to exclude thyroid contribution"},
+      {"investigation_name": "CBC", "reasoning": "Baseline before starting new medications"}
+    ],
+    "advice": [
+      "Endoscopy was clear 3 months ago — there is no evidence of cancer; further repeat workup not needed",
+      "Small frequent meals (4-5 small meals) instead of 2-3 large ones",
+      "Daily light walking 30 minutes; slow breathing exercises after prayer",
+      "SSRI takes 2-3 weeks to work; do not stop suddenly",
+      "Follow up in 1 month; return immediately if weight loss, vomiting, or black stool develops"
+    ]
+  }
+}

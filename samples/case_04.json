@@ -1,0 +1,72 @@
+{
+  "id": "case_04",
+  "description": "62 y/o male on chronic PPI for 3 years for APD, never investigated. Visiting with adult son for refill. Cost-conscious, minimal speech. Needs endoscopy + H. pylori workup.",
+  "parameters": {
+    "category": "APD/GERD/FD",
+    "age": 62,
+    "sex": "Male",
+    "education": "Primary",
+    "occupation": "Retired",
+    "setting": "Semi-urban",
+    "companion": "Adult son",
+    "visit_type": "Follow-up (refill seeking)",
+    "length": "Short",
+    "articulation": "Minimal, withholding",
+    "language_mix": "Pure Bengali",
+    "pre_visit_action": "On Pantoprazole 20mg × 3 years, never investigated",
+    "specific_concern": "Cost worry; never had endoscopy"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম। কেমন আছেন আঙ্কেল?\nরোগী: ভাইয়া, ঠিক আছি।\nছেলে: ভাইয়া আব্বার গ্যাস্ট্রিকের ওষুধ অনেক দিন ধরে চলতেছে। শেষ হইছে, আর কিনতে আসছি।\nডাক্তার: কত দিন ধরে?\nছেলে: ৩ বছর হইব। Pantonix ২০, দিনে একটা।\nডাক্তার: কেন শুরু হইছিল?\nছেলে: পেটে জ্বালা পোড়া, ঢেঁকুর। তখন এক ডাক্তার দিছিল।\nডাক্তার: এখন আঙ্কেল সমস্যা আছে?\nরোগী: না ভাইয়া। বন্ধ করলে আবার শুরু হয়।\nডাক্তার: কখনো বন্ধ করছিলেন?\nরোগী: একবার ১ মাস। আবার সমস্যা শুরু।\nডাক্তার: Endoscopy কখনো হইছে?\nছেলে: না ভাইয়া।\nডাক্তার: ব্যথা, ওজন কমা, কালো পায়খানা?\nরোগী: না ভাইয়া।\nছেলে: ভাইয়া আব্বা পান-সিগারেট খায়।\nডাক্তার: আঙ্কেল, এতদিন ওষুধ চালানো ঠিক না। একবার endoscopy করি, ulcer বা H. pylori আছে কিনা দেখি। H. pylori পেলে ১৪ দিনের treatment এ permanent solution হইব।\nরোগী: টাকার খরচ অনেক হইব?\nছেলে: আব্বা চিন্তা কইরো না।\nডাক্তার: Endoscopy ৩০০০-৩৫০০ টাকা, H. pylori test সাথে।\nডাক্তার: এখন Pantonix continue ১ সপ্তাহ। তারপর ২ সপ্তাহ Famotidine এ switch করব - H. pylori test এর accuracy এর জন্য PPI বন্ধ থাকা দরকার। তারপর endoscopy।\nডাক্তার: পান-সিগারেট কমান, gastric এর জন্য খারাপ।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Long-standing recurrent epigastric burning controlled on PPI", "duration": "3 years"},
+      {"complaint": "Symptom recurrence on stopping PPI", "duration": "Confirmed when PPI stopped for 1 month previously"}
+    ],
+    "history": [
+      "On Pantoprazole 20mg OD × 3 years without investigation",
+      "Initial symptoms — epigastric burning and belching",
+      "Betel leaf and cigarette user",
+      "No alarm features (no weight loss, no melena, no anorexia)",
+      "Never had upper GI endoscopy or H. pylori testing"
+    ],
+    "summary": "A 62-year-old male on empirical Pantoprazole for 3 years without ever being investigated. Symptoms recur whenever PPI is stopped. Betel leaf and cigarette user. No alarm features. Long-term PPI use without diagnosis is inappropriate — needs upper GI endoscopy and H. pylori testing to identify treatable cause (especially H. pylori) which would allow PPI cessation.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Chronic Acid Peptic Disease on long-term PPI — etiology not investigated",
+        "icd_code": "K29.7",
+        "confidence": 85,
+        "reasoning": "Empirical PPI dependence for 3 years with rebound on cessation in a 62-year-old smoker. Requires investigation to identify H. pylori or structural cause."
+      }
+    ],
+    "medicines": [
+      {
+        "generic_name": "Pantoprazole 20mg",
+        "trade_name": "Pantonix 20",
+        "dosage": "1 tablet",
+        "routine": {"meal_times": ["before_breakfast"]},
+        "duration": "Continue 1 week, then stop",
+        "purpose": "Continue current PPI briefly; stop 2 weeks before H. pylori testing to maximize sensitivity"
+      },
+      {
+        "generic_name": "Famotidine 20mg",
+        "trade_name": "Famotack 20 / Fadin 20",
+        "dosage": "1 tablet",
+        "routine": {"gap_hours": 12},
+        "duration": "2 weeks (between PPI cessation and endoscopy)",
+        "purpose": "H2 blocker for symptom control during PPI washout — does not interfere with H. pylori testing"
+      }
+    ],
+    "investigations": [
+      {
+        "investigation_name": "Upper GI Endoscopy with H. pylori biopsy / Rapid Urease Test",
+        "reasoning": "Age 62, 3 years of empirical PPI use without diagnosis, smoker — needs evaluation for H. pylori, ulcer, or malignancy"
+      }
+    ],
+    "advice": [
+      "Stop or significantly reduce betel leaf and cigarette use",
+      "Endoscopy in 3 weeks (after 2 weeks off PPI for accurate H. pylori test)",
+      "If H. pylori positive, a 14-day eradication regimen may give permanent relief",
+      "Come immediately if vomiting, weight loss, or black stool develops"
+    ]
+  }
+}

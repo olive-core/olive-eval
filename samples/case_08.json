@@ -1,0 +1,74 @@
+{
+  "id": "case_08",
+  "description": "72 y/o male retired professor, 3 months post-anterior wall MI with PCI (LAD, 2 stents). Now with statin-related bilateral leg myalgia. Well-controlled on GDMT, EF 45%. Mild SGPT elevation. Statin switch indicated.",
+  "parameters": {
+    "category": "Cardiometabolic",
+    "age": 72,
+    "sex": "Male",
+    "education": "Higher (Retired Professor)",
+    "occupation": "Retired",
+    "setting": "Urban",
+    "companion": "Spouse",
+    "visit_type": "Follow-up (3 months post-PCI)",
+    "length": "Long",
+    "articulation": "Clear, detailed",
+    "language_mix": "Banglish",
+    "pre_visit_action": "On Aspirin + Ticagrelor + Rosuvastatin + Bisoprolol + Lisinopril + Esomeprazole",
+    "specific_concern": "Bilateral leg myalgia × 1 month, asks about medication side effects"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, স্যার। কেমন আছেন?\nরোগী: ভাইয়া, আল্হামদুলিল্লাহ। 3-month follow up।\nডাক্তার: MI হইছিল কবে?\nরোগী: August এ, ৩ মাস আগে। Anterior wall, LAD তে PCI। 2 stents।\nডাক্তার: এখন chest pain, breathlessness?\nরোগী: না না। সকালে walking ৩০ মিনিট। সিঁড়ি ২ তলা ঠিক চড়তে পারি।\nডাক্তার: PND, orthopnea, পায়ে ফোলা?\nরোগী: না।\nস্ত্রী: ভাইয়া কিন্তু আজকাল muscle pain হইতেছে। সকালে উঠলে।\nডাক্তার: কোথায়?\nরোগী: পায়ে। দু পায়ে। Calf আর thigh।\nডাক্তার: কতদিন?\nরোগী: ১ মাস। Statin শুরুর পর থেকে মনে হচ্ছে।\nডাক্তার: Cardiologist কী বলছে?\nরোগী: ভালো। Echo last month, EF ৪৫%। Continue করতে বলছে।\nডাক্তার: কী medicine চলতেছে?\nস্ত্রী: Ecospirin 75 (one), Brilinta 90 (two), Rosuva 20 (one), Bisocor 5 (one), Lisinopril 10 (one), Sergel 20 (one)।\nডাক্তার: Total ৬টা। BP মাপি... ১১৮/৭৪। Heart rate ৬৮। ভালো।\nডাক্তার: Diabetes?\nরোগী: না। Cholesterol বেশি ছিল, MI এর সময় LDL ২৪০।\nডাক্তার: আজ test report?\nস্ত্রী: এই - CBC, S. Creatinine, SGPT, Lipid profile, HbA1c।\nডাক্তার: CBC normal। Creatinine 1.2 - slightly high। SGPT 65 - slightly high। LDL ৭৮, ভালো। HbA1c ৫.৬।\nডাক্তার: SGPT সামান্য বাড়ছে statin এর জন্য। পায়ের ব্যথাটা probably statin myalgia।\nস্ত্রী: Medicine বন্ধ?\nডাক্তার: না, post-MI এ statin বন্ধ করার ব্যাপার না - high-intensity দরকার। কিন্তু molecule switch করি, অনেকের tolerance ভালো হয়।\nডাক্তার: Rosuva ২০ → Atorva ৪০ এ switch করছি - equipotent high-intensity। CPK test ১ সপ্তাহের মধ্যে। ৬ সপ্তাহ পর LDL repeat।\nডাক্তার: Brilinta কতদিন?\nরোগী: ১ বছর, তারপর শুধু Aspirin।\nডাক্তার: ঠিক আছে।\nস্ত্রী: Diet?\nডাক্তার: ভালো চালাচ্ছেন। Salt কম, fat কম। Walking continue।\nডাক্তার: একটা important - bleeding হইলে - মাড়ি, প্রস্রাব, পায়খানা কালো - সাথে সাথে আসবেন। Brilinta + Aspirin bleeding risk।\nরোগী: জ্বী।\nডাক্তার: Mood কেমন?\nরোগী: প্রথম মাস depression এর মতন ছিল। Retire করে ঘরে - boring। এখন better।\nডাক্তার: কোনো activity, লেখালেখি?\nরোগী: কখনো university যাই lecture দিতে।\nডাক্তার: ভালো। সক্রিয় থাকা important।\nডাক্তার: ৩ মাস পর আবার follow up। CPK, repeat SGPT, lipid। Cardiologist ৬ মাসে।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Bilateral lower limb myalgia (calves and thighs)", "duration": "1 month", "timing": "Morning, since starting statin"},
+      {"complaint": "Otherwise asymptomatic — no chest pain, no breathlessness, good exercise tolerance"}
+    ],
+    "history": [
+      "Anterior wall STEMI 3 months ago — PCI to LAD with 2 stents",
+      "Echocardiogram last month: EF 45%",
+      "Pre-MI LDL 240 mg/dL — established dyslipidemia",
+      "No diabetes, no smoking",
+      "Today: BP 118/74, HR 68 — well-controlled",
+      "Today labs: Creatinine 1.2 (mildly elevated for age, acceptable), SGPT 65 (mildly elevated), LDL 78 (good), HbA1c 5.6, CBC normal"
+    ],
+    "summary": "A 72-year-old male, retired professor, presenting for 3-month follow-up after anterior wall STEMI with PCI to LAD (2 stents). Clinically well — good exercise tolerance, no anginal recurrence, no heart failure symptoms. Hemodynamically stable on guideline-directed medical therapy (DAPT, statin, beta-blocker, ACE-I). New complaint of bilateral lower limb myalgia since starting Rosuvastatin 20mg — likely statin-associated myalgia. SGPT mildly elevated. LDL well-controlled at 78. Statin switch from Rosuvastatin 20 to equipotent high-intensity Atorvastatin 40 is appropriate (maintains post-MI secondary prevention intensity), with CPK measurement to exclude clinically significant myopathy and 6-week LDL recheck to confirm continued control.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Status post Anterior Wall STEMI with PCI to LAD (3 months) — stable",
+        "icd_code": "I25.2",
+        "confidence": 100,
+        "reasoning": "Established diagnosis with recent PCI; clinically stable on GDMT."
+      },
+      {
+        "diagnosis_name": "Dyslipidemia — controlled on statin",
+        "icd_code": "E78.5",
+        "confidence": 100,
+        "reasoning": "Pre-MI LDL 240, now 78 on Rosuvastatin 20."
+      },
+      {
+        "diagnosis_name": "Statin-associated myalgia (suspected)",
+        "icd_code": "M62.81",
+        "confidence": 80,
+        "reasoning": "Bilateral lower limb myalgia onset after starting Rosuvastatin 20, with mildly elevated SGPT. CPK pending."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Aspirin 75mg", "trade_name": "Ecospirin 75", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast"]}, "duration": "Continue lifelong", "purpose": "Antiplatelet for secondary prevention"},
+      {"generic_name": "Ticagrelor 90mg", "trade_name": "Brilinta 90", "dosage": "1 tablet", "routine": {"gap_hours": 12}, "duration": "Continue until 1 year post-PCI", "purpose": "Dual antiplatelet therapy post-PCI"},
+      {"generic_name": "Atorvastatin 40mg", "trade_name": "Atova 40 / Lipitor 40", "dosage": "1 tablet", "routine": {"meal_times": ["after_dinner"]}, "duration": "Continue", "purpose": "Switched from Rosuvastatin 20 due to myalgia — Atorvastatin 40mg is equipotent high-intensity statin (maintains post-MI secondary prevention target); different molecule may improve tolerance"},
+      {"generic_name": "Bisoprolol 5mg", "trade_name": "Bisocor 5", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast"]}, "duration": "Continue", "purpose": "Beta-blocker post-MI; mortality benefit"},
+      {"generic_name": "Lisinopril 10mg", "trade_name": "Lisinor 10", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast"]}, "duration": "Continue", "purpose": "ACE inhibitor post-MI with EF 45%"},
+      {"generic_name": "Esomeprazole 20mg", "trade_name": "Sergel 20", "dosage": "1 tablet", "routine": {"meal_times": ["before_breakfast"]}, "duration": "Continue while on DAPT", "purpose": "Gastroprotection during dual antiplatelet therapy"}
+    ],
+    "investigations": [
+      {"investigation_name": "Serum CPK", "timing": "Within 1 week", "reasoning": "Evaluate severity of statin myalgia; rule out rhabdomyolysis"},
+      {"investigation_name": "Repeat SGPT and Lipid Profile", "timing": "After 6 weeks", "reasoning": "Confirm resolution of transaminitis and maintained LDL control after statin switch — if LDL rises, escalate"}
+    ],
+    "advice": [
+      "Continue daily 30-minute walk and stable diet — patient managing well",
+      "Watch for bleeding — gum bleeding, blood in urine, black stools — come immediately (DAPT bleeding risk)",
+      "Come immediately if chest pain, breathlessness, or significant new muscle weakness",
+      "Stay socially active — continue occasional lectures and engagement",
+      "Follow up in 3 months with CPK and repeat liver function; cardiologist in 6 months"
+    ]
+  }
+}

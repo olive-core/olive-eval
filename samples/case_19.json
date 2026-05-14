@@ -1,0 +1,59 @@
+{
+  "id": "case_19",
+  "description": "60 y/o female overweight housewife with 3-4 year bilateral knee OA (right worse), progressive, BMI 35, can no longer walk for exercise. Asks about knee replacement.",
+  "parameters": {
+    "category": "Musculoskeletal",
+    "age": 60,
+    "sex": "Female",
+    "education": "Primary",
+    "occupation": "Housewife",
+    "setting": "Urban",
+    "companion": "Adult daughter",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Verbose, scattered",
+    "language_mix": "Pure Bengali",
+    "pre_visit_action": "Various pharmacy painkillers, warm compress, home remedies",
+    "specific_concern": "Wants to know about knee replacement"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন আম্মা।\nরোগী: ভাইয়া দুই হাঁটুতে ব্যথা। সিঁড়ি উঠতে পারি না।\nমেয়ে: আম্মার অনেক দিনের সমস্যা।\nডাক্তার: কত দিন?\nরোগী: ৩-৪ বছর। আস্তে আস্তে বাড়ছে। এখন অসহ্য।\nডাক্তার: কোন হাঁটু বেশি?\nরোগী: ডান। বাম টাও খারাপ।\nডাক্তার: সকালে stiff?\nরোগী: হ্যাঁ। ৫-১০ মিনিট ছাড়াইতে লাগে।\nডাক্তার: হাঁটতে?\nরোগী: সমান জমিতে কিছুটা ভালো। সিঁড়ি, নামতে - কঠিন।\nমেয়ে: ভাইয়া আম্মা স্কয়ার পার্কে walk এ যাইত, এখন যাইতে পারে না।\nডাক্তার: ফোলা?\nরোগী: কখনো একটু, গরম লাগে।\nডাক্তার: রাতে?\nরোগী: ঘুম ভাঙে।\nডাক্তার: ওজন? Height?\nরোগী: ৮২ kg, ৫ ফুট।\nডাক্তার: BMI ৩৫, obese।\n[Examination]\nডাক্তার: দু হাঁটু crepitus, ডান বেশি। Mild swelling। Range of motion কম।\nডাক্তার: X-ray করি দু হাঁটুর - standing AP and lateral।\nডাক্তার: এটা bilateral OA knee, ডান বেশি। Weight বেশি, তাই progress fast।\nরোগী: Replacement লাগব?\nডাক্তার: এখনই না। আগে conservative। সবচেয়ে important - ওজন কমানো। ৫-১০ kg কমলে ব্যথা অনেক কমে যাবে।\nরোগী: কীভাবে কমাব, হাঁটতে পারি না।\nডাক্তার: পানিতে exercise সবচেয়ে ভালো - পানিতে হাঁটা। Diet কমাইতে হবে - ভাত half plate।\nডাক্তার: NSAID ২ সপ্তাহ। Topical gel। Physiotherapy - হাঁটুর strengthening।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Bilateral knee pain (right > left)", "duration": "3-4 years, progressive"},
+      {"complaint": "Difficulty climbing and descending stairs", "duration": "Progressive"},
+      {"complaint": "Morning stiffness × 10-15 minutes"},
+      {"complaint": "Nocturnal pain disturbing sleep"}
+    ],
+    "history": [
+      "BMI 35 (Class I obesity)",
+      "Occasional knee swelling without significant warmth",
+      "No history of trauma, no inflammatory features lasting >30 min",
+      "Has tried OTC painkillers and warm compress without sustained relief",
+      "Examination: bilateral crepitus (right more), restricted range of motion, mild swelling"
+    ],
+    "summary": "A 60-year-old obese (BMI 35) housewife with 3-4 year history of progressive bilateral knee pain (right worse than left), morning stiffness <30 minutes, difficulty with stairs, and now sleep disturbance from nocturnal pain. Classical clinical picture of osteoarthritis with obesity as the major modifiable factor. Examination confirms bilateral crepitus with restricted range of motion. Conservative management with weight reduction (the single most impactful intervention), short-term analgesia, and physiotherapy is the first step. Joint replacement is not indicated at this stage.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Bilateral Osteoarthritis of Knee (right > left)",
+        "icd_code": "M17.0",
+        "confidence": 92,
+        "reasoning": "Classical OA presentation — chronic progressive bilateral knee pain in obese elderly female with morning stiffness <30 min, mechanical aggravation, crepitus, and restricted ROM on examination."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Etoricoxib 60mg", "trade_name": "Etorix 60 / Arcoxia 60", "dosage": "1 tablet", "routine": {"meal_times": ["after_lunch"]}, "duration": "2 weeks", "purpose": "NSAID for OA pain — short-term use"},
+      {"generic_name": "Esomeprazole 20mg", "trade_name": "Sergel 20", "dosage": "1 tablet", "routine": {"meal_times": ["before_breakfast"]}, "duration": "2 weeks", "purpose": "Gastroprotection during NSAID use"},
+      {"generic_name": "Diclofenac Diethylamine 1% gel", "trade_name": "Voltagel / Diclomax Gel", "dosage": "Apply locally", "routine": {"meal_times": ["morning", "night"]}, "duration": "2-4 weeks", "purpose": "Topical NSAID for localized pain relief"}
+    ],
+    "investigations": [
+      {"investigation_name": "X-Ray of both knees — standing AP and lateral views", "reasoning": "Grade severity of OA and rule out other pathology"}
+    ],
+    "advice": [
+      "Weight reduction is the single most important step — target 5-10 kg loss over 6 months for substantial pain reduction",
+      "Aquatic exercise (walking in waist-deep water) is ideal — minimal joint loading",
+      "Reduce rice intake to half plate per meal; increase vegetable intake",
+      "Physiotherapy referral for quadriceps strengthening exercises",
+      "Avoid prolonged squatting and stair climbing; return for re-evaluation in 4 weeks with X-ray reports"
+    ]
+  }
+}

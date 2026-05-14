@@ -1,0 +1,66 @@
+{
+  "id": "case_20",
+  "description": "26 y/o female working woman with moderate iron deficiency anemia (Hb 8.2, microcytic). Heavy periods for 1 year + vegetarian diet. Needs iron and gyne workup.",
+  "parameters": {
+    "category": "Women's Health",
+    "age": 26,
+    "sex": "Female",
+    "education": "Higher",
+    "occupation": "Working woman (corporate)",
+    "setting": "Urban",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Clear, mildly anxious",
+    "language_mix": "Banglish",
+    "pre_visit_action": "Own CBC done — Hb 8.2",
+    "specific_concern": "Severe fatigue affecting work"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া অনেক ক্লান্ত। কাজে শক্তি পাই না। ৩-৪ মাস।\nডাক্তার: আর কিছু?\nরোগী: সিঁড়ি উঠতে শ্বাসকষ্ট। উঠতে গেলে মাথা ঘোরায়।\nডাক্তার: বুক ধড়ফড়?\nরোগী: হ্যাঁ, palpitation।\nডাক্তার: চুল পড়ে? Nails?\nরোগী: অনেক চুল পড়ে। Nails brittle।\nডাক্তার: CBC এনেছেন?\nরোগী: হ্যাঁ। Hb 8.2, MCV 68, MCH 21। Iron deficiency report।\nডাক্তার: Periods heavy?\nরোগী: হ্যাঁ, ৭-৮ দিন। Clots।\nডাক্তার: কতদিন?\nরোগী: ১ বছর। আগে ৫ দিন।\nডাক্তার: Cycle regular?\nরোগী: প্রায় regular।\nডাক্তার: Diet?\nরোগী: প্রায় vegetarian। মাংস কম।\nডাক্তার: Pregnancy?\nরোগী: না।\nডাক্তার: GI symptoms - black stool, pain?\nরোগী: না।\nডাক্তার: Bleeding disorder family?\nরোগী: না।\n[Examination]\nডাক্তার: Conjunctiva pale, nails pale, mild glossitis, tachycardia 102।\nডাক্তার: Classic iron deficiency anemia - menorrhagia + low dietary iron।\nরোগী: Transfusion?\nডাক্তার: না, ৮.২ এ oral iron। ৩ মাসে normal।\nডাক্তার: কিন্তু periods heavy টা - gyne consult, USG আর hormonal evaluation।\nডাক্তার: Iron - Zif-3 capsule রাতে। সাথে orange/lemon juice।\nডাক্তার: Stool কালো হইব - ভয় না।\nডাক্তার: ৪ সপ্তাহ পর CBC repeat। আজই serum ferritin।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Fatigue and reduced work capacity", "duration": "3-4 months"},
+      {"complaint": "Exertional dyspnea and dizziness on standing"},
+      {"complaint": "Palpitations"},
+      {"complaint": "Hair fall and brittle nails"}
+    ],
+    "history": [
+      "Heavy and prolonged menses × 1 year — 7-8 day flow with clots (previously 5 days)",
+      "Predominantly vegetarian diet with low meat intake",
+      "Hb 8.2 g/dL, MCV 68, MCH 21 (microcytic hypochromic)",
+      "No GI symptoms (no melena, no abdominal pain)",
+      "No bleeding disorder family history",
+      "Examination: pallor (conjunctiva and nails), mild glossitis, tachycardia 102 bpm"
+    ],
+    "summary": "A 26-year-old working female with moderate microcytic hypochromic anemia (Hb 8.2 g/dL, MCV 68) presenting with classical symptoms of iron deficiency — fatigue, exertional dyspnea, dizziness, palpitations, hair fall, and brittle nails. Two clear etiological factors: 1-year history of menorrhagia with clots, and predominantly vegetarian low-iron diet. Examination findings consistent with moderate anemia. Iron deficiency confirmed by indices. Hemoglobin level does not warrant transfusion — oral iron therapy is appropriate. The underlying menorrhagia needs separate gynecological evaluation to identify and treat the cause.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Iron Deficiency Anemia (Moderate) — secondary to menorrhagia and dietary insufficiency",
+        "icd_code": "D50.0",
+        "confidence": 95,
+        "reasoning": "Classical clinical and laboratory features of iron deficiency anemia with two identifiable causes (menorrhagia, vegetarian diet)."
+      },
+      {
+        "diagnosis_name": "Menorrhagia — etiology to be evaluated",
+        "icd_code": "N92.0",
+        "confidence": 90,
+        "reasoning": "1-year history of heavy and prolonged menses with clots requires gynecological workup."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Ferrous Fumarate 200mg + Folic Acid 0.5mg", "trade_name": "Zif-3 / Folison-Z", "dosage": "1 capsule", "routine": {"meal_times": ["after_dinner"]}, "duration": "3 months minimum, then reassess", "purpose": "Oral iron replacement; take with citrus / vitamin C for absorption; avoid with tea/milk/calcium"}
+    ],
+    "investigations": [
+      {"investigation_name": "Serum Ferritin", "reasoning": "Confirm iron deficiency and establish baseline body iron stores"},
+      {"investigation_name": "USG of Pelvis (Transabdominal)", "reasoning": "Evaluate menorrhagia — exclude fibroids, polyps, structural causes"},
+      {"investigation_name": "Repeat CBC at 4 weeks", "reasoning": "Assess response to iron therapy (Hb should rise by 1-2 g/dL)"}
+    ],
+    "advice": [
+      "Take iron tablet with orange or lemon juice (vitamin C improves absorption); avoid taking with tea, milk, or calcium",
+      "Increase iron-rich food intake — beef, liver, fish, eggs, dark green vegetables, dates",
+      "Stool may turn black — this is normal with iron tablets, not a cause for concern",
+      "Gynecology consultation needed for heavy periods evaluation",
+      "Return in 4 weeks with repeat CBC and serum ferritin reports"
+    ]
+  }
+}

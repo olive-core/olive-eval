@@ -1,0 +1,66 @@
+{
+  "id": "case_05",
+  "description": "48 y/o male banker with asymptomatic HTN detected on pre-employment medical check. BP 160/98 confirmed today. Father had HTN with stroke, mother diabetic. BMI 28, sedentary.",
+  "parameters": {
+    "category": "Cardiometabolic",
+    "age": 48,
+    "sex": "Male",
+    "education": "Higher (Graduate)",
+    "occupation": "Banker",
+    "setting": "Urban",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Clear",
+    "language_mix": "Banglish",
+    "pre_visit_action": "None — incidental finding on pre-employment medical",
+    "specific_concern": "Worried about lifestyle change"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া, pre-employment medical check এ pressure ১৫৫/৯৫ পাইছে। ৩ বার মাপছে, similar।\nডাক্তার: কোনো symptoms? Headache, dizziness, chest pain?\nরোগী: না ভাইয়া, কিছু না। Otherwise absolutely normal feel।\nডাক্তার: পরিবারে hypertension, diabetes, heart disease?\nরোগী: বাবার HTN ছিল। ৭০ বছরে stroke। মা diabetic।\nডাক্তার: আপনার past history?\nরোগী: কিছু না।\nডাক্তার: Exercise? Food?\nরোগী: ভাইয়া banker, desk job. Exercise nei। Restaurant food অনেক। Salt intake বেশি probably।\nডাক্তার: ওজন, height?\nরোগী: ৮৪ kg, ৫'৮\"।\nডাক্তার: BMI ২৮, overweight। ধূমপান?\nরোগী: না, never।\nডাক্তার: Alcohol?\nরোগী: very occasional।\nডাক্তার: আজ pressure মাপি... ১৬০/৯৮। ৫ মিনিট পর আবার।\n[৫ মিনিট]\nডাক্তার: এখন ১৫৮/৯৫। আপনার HTN confirmed, stage 2।\nরোগী: Treatment শুরু করতে হবে?\nডাক্তার: হ্যাঁ। বয়স ৪৮, family history, BMI ৭ বেশি, BP ১৬০ এর উপরে - immediate treatment দরকার।\nডাক্তার: কিছু basic test - end-organ damage check। ECG, S. Creatinine, Lipid profile, Urine R/E, FBS, HbA1c।\nডাক্তার: Medicine আজ থেকে start - Losartan 50, রাতে একটা।\nডাক্তার: Lifestyle - salt কমান (১ চা চামচ এর কম দিনে), restaurant food কমান, walking ৩০ মিনিট daily, weight কমান। এগুলো alone ১০-১৫ point BP কমাইতে পারে।\nডাক্তার: ২ সপ্তাহ পর আসবেন, BP মাপব, test report দেখব।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Asymptomatic elevated blood pressure detected on screening", "duration": "Found on pre-employment medical"}
+    ],
+    "history": [
+      "BP 155/95 on 3 occasions during pre-employment medical",
+      "Father — HTN with stroke at age 70",
+      "Mother — diabetic",
+      "Sedentary banking job, BMI 28 (overweight), high restaurant food intake",
+      "No smoking, occasional alcohol",
+      "Today BP 160/98 then 158/95 on repeat"
+    ],
+    "summary": "A 48-year-old male banker with newly diagnosed Stage 2 Hypertension found incidentally on pre-employment screening. Asymptomatic. Significant cardiovascular risk profile — strong family history (father with HTN+stroke, mother diabetic), BMI 28 (overweight), sedentary lifestyle, and high dietary salt. BP 160/98 today on repeat measurement. Requires immediate pharmacological treatment along with lifestyle modification and screening for end-organ damage and concomitant cardiovascular risk factors.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Hypertension — Stage 2 (Newly Diagnosed)",
+        "icd_code": "I10",
+        "confidence": 95,
+        "reasoning": "Sustained BP >160/95 on multiple measurements across screening and clinic visits. Asymptomatic. No secondary cause features clinically."
+      }
+    ],
+    "medicines": [
+      {
+        "generic_name": "Losartan Potassium 50mg",
+        "trade_name": "Losartil 50 / Angilock 50",
+        "dosage": "1 tablet",
+        "routine": {"meal_times": ["after_dinner"]},
+        "duration": "Continue (long-term)",
+        "purpose": "First-line ARB for HTN; also cardio- and reno-protective"
+      }
+    ],
+    "investigations": [
+      {"investigation_name": "ECG", "reasoning": "Baseline cardiac assessment for end-organ damage (LVH)"},
+      {"investigation_name": "Serum Creatinine", "reasoning": "Baseline renal function before starting ARB"},
+      {"investigation_name": "Fasting Blood Sugar and HbA1c", "reasoning": "Screen for diabetes given strong family history"},
+      {"investigation_name": "Lipid Profile", "reasoning": "Cardiovascular risk stratification"},
+      {"investigation_name": "Urine R/E", "reasoning": "Screen for proteinuria as marker of renal involvement"}
+    ],
+    "advice": [
+      "Reduce dietary salt to less than 1 teaspoon daily; avoid restaurant and processed food",
+      "Walk 30 minutes daily, at least 5 days a week",
+      "Target weight reduction of 5-7 kg over 3-6 months",
+      "Home BP monitoring weekly; bring readings on follow-up",
+      "Return in 2 weeks with all reports for BP review and treatment adjustment"
+    ]
+  }
+}

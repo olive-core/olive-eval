@@ -1,0 +1,56 @@
+{
+  "id": "case_25",
+  "description": "3 y/o female child with 2-day acute watery diarrhea (8-10 episodes/day) and vomiting. Some dehydration on examination (WHO Plan B). Mother improperly bolus-feeding ORS. Grandmother adds traditional remedies. No antibiotic indicated.",
+  "parameters": {
+    "category": "Paediatric",
+    "age": 3,
+    "sex": "Female (child)",
+    "education": "Mother: Secondary",
+    "occupation": "Child",
+    "setting": "Semi-urban",
+    "companion": "Mother + grandmother",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Anxious mother, grandmother adds traditional advice",
+    "language_mix": "Bengali",
+    "pre_visit_action": "ORS given (but in bolus, child vomited)",
+    "specific_concern": "Mother asks for antibiotic; grandmother for traditional remedies"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nমা: ভাইয়া বাচ্চার পাতলা পায়খানা ২ দিন থেকে। দুর্বল হয়ে যাচ্ছে।\nডাক্তার: কতবার?\nমা: ৮-১০ বার।\nডাক্তার: পায়খানা কেমন?\nমা: পানির মতন। হলুদ। দুর্গন্ধ।\nডাক্তার: রক্ত? mucus?\nমা: না।\nডাক্তার: বমি?\nমা: হ্যাঁ ৩-৪ বার আজ।\nডাক্তার: জ্বর?\nমা: ৯৯ এর মতন।\nদাদী: ভাইয়া আমার আমলে ঘরের টোটকা দিয়াই ঠিক হইত। ডাবের পানি, সাবুদানা দিইছি।\nডাক্তার: দাদী এগুলা ভালো। তবে ORS লাগে সাথে।\nমা: ORS দিইছি, বমি করছে।\nডাক্তার: কতটুকু একসাথে?\nমা: পুরা গ্লাস।\nডাক্তার: এই ভুল। অল্প অল্প - ১ চামচ ৫-১০ মিনিট পর পর। বমি না হলে শোষণ ভাল।\nডাক্তার: প্রস্রাব?\nমা: কম, ৩-৪ বার।\nডাক্তার: রং?\nমা: হলুদ deep।\nডাক্তার: চোখ-মুখ?\nমা: চোখ একটু বসে গেছে।\nডাক্তার: জিভ-মুখ শুকনা?\nমা: হ্যাঁ।\nডাক্তার: ওজন?\nমা: ১২ kg, ২ সপ্তাহ আগে।\n[Examination]\nডাক্তার: বাচ্চা alert কিন্তু lethargic একটু। Skin turgor কম। Eyes mildly sunken। CRT ২ sec। HR ১৩০, RR ২৮।\nডাক্তার: Mild dehydration - some dehydration (WHO Plan B)।\nডাক্তার: এক ঘন্টা clinic এ থাকতে হবে। ORS অল্প অল্প করে দিব, ৫০-১০০ ml/kg। ১ ঘন্টা পর reassess।\nডাক্তার: ভাল না হলে IV fluid, hospital।\nমা: Antibiotic?\nডাক্তার: না, এটা viral diarrhea সাধারণত। Antibiotic এ কাজ হয় না।\nডাক্তার: Zinc syrup ১৪ দিন - পরবর্তী diarrhea কমায়।\nডাক্তার: ORS continue করবেন বাসায়। অল্প অল্প।\nডাক্তার: কাঁচা ফল, juice না - osmotic load বাড়ায়। সাদা ভাত-আলু, কলা, দই ভালো।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Acute watery diarrhea — 8-10 episodes/day", "duration": "2 days"},
+      {"complaint": "Vomiting — 3-4 episodes today", "duration": "Today"},
+      {"complaint": "Decreased oral intake and reduced urine output"},
+      {"complaint": "Low-grade fever (99°F)"}
+    ],
+    "history": [
+      "3-year-old female, weight 12 kg",
+      "Mother giving ORS in large bolus (improperly) — child vomits",
+      "Grandmother giving coconut water and sago",
+      "No blood or mucus in stool",
+      "Examination: alert but lethargic, reduced skin turgor, mildly sunken eyes, CRT 2 sec, HR 130, RR 28 — clinical signs of 'some dehydration' (WHO Plan B)"
+    ],
+    "summary": "A 3-year-old female (12 kg) with acute non-bloody watery diarrhea (8-10 episodes/day) and vomiting (3-4 today) for 2 days, with reduced urine output and clinical signs of 'some dehydration' per WHO classification (lethargic but alert, mildly sunken eyes, reduced skin turgor, tachycardia, tachypnea). Mother has been giving ORS incorrectly in bolus volumes causing vomiting. This presentation is consistent with acute viral gastroenteritis. WHO Plan B (supervised oral rehydration) is appropriate, with re-assessment after 1 hour. No antibiotics indicated. Zinc supplementation per WHO guideline. Continued breastfeeding/age-appropriate diet rather than withholding food.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Acute Gastroenteritis with Some Dehydration (WHO Plan B)",
+        "icd_code": "A09",
+        "confidence": 95,
+        "reasoning": "Acute watery diarrhea with vomiting and clinical signs of some dehydration in a 3-year-old. Non-bloody stool and absence of high fever favor viral etiology."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Oral Rehydration Salt (low osmolarity)", "trade_name": "ORSaline-N / SMC ORSaline", "dosage": "75 ml/kg over 4 hours (approximately 900 ml total, given in small frequent sips of 1 teaspoon every 5-10 minutes) under supervision in clinic; then home ORS after each loose stool", "routine": {"per_day": "Continuous small sips during illness"}, "duration": "Until diarrhea resolves", "purpose": "Rehydration — WHO Plan B"},
+      {"generic_name": "Zinc Sulfate Syrup 20mg/5ml", "trade_name": "Xinc Syrup / Zincovit Syrup", "dosage": "5 ml", "routine": {"meal_times": ["after_breakfast"]}, "duration": "14 days", "purpose": "Reduces severity, duration, and risk of recurrence of diarrhea (WHO recommendation)"}
+    ],
+    "investigations": [],
+    "advice": [
+      "Give ORS in SMALL frequent sips (1 teaspoon every 5-10 minutes) — NOT in large amounts at once",
+      "Antibiotics are NOT needed — this is viral diarrhea",
+      "Continue feeding — soft rice, mashed potato, banana, curd; avoid fruit juices and raw fruits (worsen diarrhea)",
+      "Return immediately if: child becomes drowsy/unresponsive, no urine for >6 hours, persistent vomiting, blood in stool, or high fever develops",
+      "Reassessment in clinic after 1 hour of supervised ORS therapy"
+    ]
+  }
+}

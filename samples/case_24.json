@@ -1,0 +1,58 @@
+{
+  "id": "case_24",
+  "description": "33 y/o male corporate banker with 4-5 months of panic-like palpitations, gas, insomnia. Extensively investigated — ECG×3, Echo, stress test, TSH, endoscopy all normal. Real concern (illness anxiety from father's MI) emerges late in conversation. LAYER 00 STRESS TEST — hidden agenda diagnosis.",
+  "parameters": {
+    "category": "Other (Psychosomatic)",
+    "age": 33,
+    "sex": "Male",
+    "education": "Higher (Corporate)",
+    "occupation": "Banker — high stress",
+    "setting": "Urban",
+    "companion": "Alone",
+    "visit_type": "New (third doctor)",
+    "length": "Long",
+    "articulation": "Verbose, real concern emerges late",
+    "language_mix": "Banglish",
+    "pre_visit_action": "Multiple cardiology workups all normal, on PPI 4 months without benefit",
+    "specific_concern": "Believes something is wrong despite normal tests (illness anxiety)"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া, অনেক সমস্যা। বুক ধড়ফড়, gas, ঘুম হয় না।\nডাক্তার: কতদিন?\nরোগী: ৪-৫ মাস। বাড়তেছে।\nডাক্তার: বুক ধড়ফড় কখন?\nরোগী: হঠাৎ। দিনে কয়েকবার। বিশেষ করে office এ।\nডাক্তার: কতক্ষণ?\nরোগী: ১৫-৩০ মিনিট।\nডাক্তার: Exercise সাথে?\nরোগী: না। বসা থেকেই হঠাৎ।\nডাক্তার: বুকে ব্যথা?\nরোগী: একটু চাপ। ভয় লাগে।\nডাক্তার: ECG, Echo?\nরোগী: ৩ বার ECG, একবার Echo, stress test - সব normal। Cardiologist বলছে heart ঠিক।\nডাক্তার: তাহলে কেন আসছেন?\nরোগী: ভাইয়া বিশ্বাস করতে পারছি না। Maybe rare cardiac? Thyroid?\nডাক্তার: TSH?\nরোগী: ২ মাস আগে normal।\nডাক্তার: Gas?\nরোগী: সবসময় পেট ভরা, ঢেঁকুর। Endoscopy করছি - mild gastritis।\nডাক্তার: Sergel?\nরোগী: ৪ মাস। কাজ হয় না।\nডাক্তার: ঘুম?\nরোগী: শুতে গেলে আসে না। চিন্তা। মাঝরাতে উঠি, ফোন ২-৩ ঘন্টা।\nডাক্তার: চিন্তা কী?\nরোগী: Office deadline। ভবিষ্যত - বাচ্চার পড়াশোনা, parents এর স্বাস্থ্য। আবার মনে হয় আমি অসুস্থ, কেউ ধরতে পারছে না।\nডাক্তার: পরিবারে এমন কেউ?\nরোগী: মা'র anxiety ছিল।\nডাক্তার: Job?\nরোগী: Corporate, banking। Pressure অনেক।\nডাক্তার: Stressful event আগে?\nরোগী: গত বছর promotion মিস। আর বাবার heart attack ৬ মাস আগে। বাবা ভালো, কিন্তু আমি অনেক ভয় পাইছিলাম।\nডাক্তার: তখন থেকে symptoms?\nরোগী: হ্যাঁ... এই connection আমি ভাবিনি কখনো।\nডাক্তার: বাবার heart attack এর পর আপনিও heart attack হবে এমন ভয়?\nরোগী: হ্যাঁ। সবসময়। বুকে চাপ লাগলেই মনে হয় এই বুঝি।\nডাক্তার: Panic attack হইছে?\nরোগী: হ্যাঁ। হঠাৎ ভয়, কাঁপুনি, শ্বাস বন্ধ।\nডাক্তার: কতবার?\nরোগী: ১-২ বার সপ্তাহে।\n[Examination]\nডাক্তার: BP ১৩০/৮৫, pulse ৯২। বুক clear।\nডাক্তার: দেখুন - সব test normal। কিন্তু symptoms real - এটা Generalized Anxiety Disorder with panic features। সাথে health anxiety - বাবার heart attack trigger।\nরোগী: ভাইয়া আমি পাগল?\nডাক্তার: না। Urban professionals দের ১৫-২০% এর হয়। Brain chemistry, treat করা যায়।\nডাক্তার: আপনি যত test করবেন, anxiety তত বাড়বে। আর test না।\nরোগী: কিন্তু gas, palpitation আসে কীভাবে?\nডাক্তার: Anxiety এর somatic manifestation - শারীরিক প্রকাশ। Autonomic nervous system overactive, তাই বুক ধড়ফড় আর gut motility change এ gas।\nডাক্তার: Escitalopram 5 mg start। ২-৩ সপ্তাহে কাজ শুরু। ১ সপ্তাহে ১০ এ বাড়াব।\nডাক্তার: রাতে Clonazepam ০.২৫ ১ সপ্তাহ - ঘুম আর panic।\nডাক্তার: Counselor/psychologist এর কাছে যাবেন - CBT খুব ভালো কাজ।\nডাক্তার: ৩ সপ্তাহ পর।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Episodic palpitations with chest pressure", "duration": "4-5 months", "timing": "Sudden onset, lasting 15-30 minutes, occurring multiple times daily — not exertional"},
+      {"complaint": "Persistent post-prandial fullness and belching despite long-term PPI", "duration": "4-5 months"},
+      {"complaint": "Insomnia with intrusive worry and mid-sleep awakening", "duration": "4-5 months"},
+      {"complaint": "Episodic anxiety attacks with breathlessness sensation and tremor (1-2 times/week)"}
+    ],
+    "history": [
+      "Father had myocardial infarction 6 months ago (trigger event) — patient developed cardiac fear",
+      "Maternal history of anxiety disorder",
+      "Multiple normal cardiac evaluations: ECG × 3, Echocardiogram, Stress Test — all normal",
+      "TSH normal 2 months ago",
+      "Upper GI endoscopy — mild gastritis only; on PPI 4 months without symptom benefit",
+      "Corporate banking job with high work pressure; missed recent promotion (stressor)",
+      "Examination: BP 130/85, pulse 92, otherwise unremarkable"
+    ],
+    "summary": "A 33-year-old male corporate banker presenting with 4-5 months of episodic non-exertional palpitations, chest pressure, dyspepsia unresponsive to PPI, insomnia with intrusive worry, and weekly panic-like episodes. The patient has undergone extensive normal cardiac workup (ECG × 3, Echocardiogram, stress test), normal TSH, and an endoscopy showing only mild gastritis. The actual trigger — father's myocardial infarction 6 months ago — emerged only late in the consultation. Clinical picture is consistent with Generalized Anxiety Disorder with panic features and significant illness anxiety (cardiac focus) following a bereavement-like trigger event. Continued cardiac testing will reinforce the anxiety. Treatment is SSRI with brief benzodiazepine bridge and CBT referral; PPI should be discontinued as futile.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Generalized Anxiety Disorder with Panic Features and Illness Anxiety (Cardiac)",
+        "icd_code": "F41.1",
+        "confidence": 88,
+        "reasoning": "Symptom onset temporally linked to father's MI (trigger), persistent health anxiety despite repeatedly normal investigations, classic somatic anxiety symptoms (palpitations, autonomic features, panic episodes), insomnia with worry, and family history of anxiety."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Escitalopram 5mg", "trade_name": "Esita 5 / Cipalex 5", "dosage": "1 tablet (start with 5mg × 1 week, then 10mg)", "routine": {"meal_times": ["after_breakfast"]}, "duration": "Minimum 6 months", "purpose": "SSRI first-line for GAD with panic features"},
+      {"generic_name": "Clonazepam 0.25mg", "trade_name": "Rivotril 0.25 / Disopan 0.5 (half)", "dosage": "1 tablet at night", "routine": {"meal_times": ["after_dinner"]}, "duration": "1 week only (bridging therapy)", "purpose": "Short-term bridge for sleep and acute panic — to be discontinued once SSRI takes effect"}
+    ],
+    "investigations": [],
+    "advice": [
+      "Avoid further cardiac testing unless genuinely new red flags appear (e.g., exertional chest pain) — repeatedly normal workups indicate no cardiac disease and more tests will reinforce anxiety",
+      "Refer to a counselor/psychologist for Cognitive Behavioral Therapy (CBT) — very effective for anxiety",
+      "Discontinue PPI — no benefit, GI symptoms are anxiety-driven",
+      "SSRI takes 2-3 weeks to start working; do not stop suddenly",
+      "Return in 3 weeks for review and dose titration"
+    ]
+  }
+}

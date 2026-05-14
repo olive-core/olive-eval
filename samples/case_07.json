@@ -1,0 +1,62 @@
+{
+  "id": "case_07",
+  "description": "68 y/o male, 4 years T2DM + HTN, semi-urban, with poor compliance. HbA1c 8.4, BP 160/95. Already has DPN and known background retinopathy. Adult daughter accompanies. Regional dialect.",
+  "parameters": {
+    "category": "Cardiometabolic",
+    "age": 68,
+    "sex": "Male",
+    "education": "Primary",
+    "occupation": "Retired farmer",
+    "setting": "Semi-urban (visits Dhaka chamber)",
+    "companion": "Adult daughter",
+    "visit_type": "Follow-up (3 monthly)",
+    "length": "Medium",
+    "articulation": "Minimal, daughter dominates",
+    "language_mix": "Pure Bengali with regional dialect",
+    "pre_visit_action": "On Metformin 500 BD + Amlodipine 5 + Losartan 50 × 4 years (irregular)",
+    "specific_concern": "Resistant to insulin; daughter worried about compliance"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম। আঙ্কেল কেমন আছেন?\nরোগী: ভাইয়া, শরীরডা ভালা না।\nমেয়ে: ভাইয়া, আব্বার রিপোর্ট নিয়া আসছি।\nডাক্তার: রিপোর্ট... HbA1c ৮.৪, FBS ১৬৫, 2 hour ABF ২৪৫। Sugar বেশি।\nরোগী: আমি ত নিয়মিত ওষুধ খাই।\nমেয়ে: ভাইয়া আব্বা ভুইলা যায়। মিষ্টি খায়, পান চিনি দিয়া।\nডাক্তার: এখন কী সমস্যা?\nরোগী: পায়ে ঝিম ঝিম। রাইতে বার বার প্রস্রাব।\nমেয়ে: রাইতে ৩-৪ বার। সারাদিন ক্লান্ত।\nডাক্তার: পায়ে কতদিন?\nমেয়ে: ২-৩ মাস। কখনো জ্বালা পোড়া।\nডাক্তার: চোখে?\nরোগী: একটু কম দেখি।\nমেয়ে: চোখের ডাক্তার retina তে background change বলছে ৬ মাস আগে।\nডাক্তার: Pressure?\nরোগী: আজ ১৬০/৯৫।\nডাক্তার: কী medicine?\nমেয়ে: Comet ৫০০ সকাল-রাইতে, Amdocal ৫, Losartan ৫০।\nডাক্তার: কতদিন?\nমেয়ে: ৪ বছর।\nডাক্তার: পায়ে ক্ষত?\nরোগী: না।\n[Examination]\nডাক্তার: পায়ের monofilament test... sensation কম দুই পায়ে। Pulses ভালো।\nডাক্তার: Sugar আর pressure দুটোই uncontrolled। DPN শুরু হইছে। ওষুধ change লাগব।\nডাক্তার: HbA1c repeat, S. Creatinine, Urine ACR, Lipid, ECG করি।\nমেয়ে: ভাইয়া insulin?\nডাক্তার: এখনই না। আগে oral medicine intensify করি।\nডাক্তার: Diamicron MR ৩০ mg সকালে add। DPP-4 inhibitor - Linagliptin ৫ mg add। Losartan ৫০ → ১০০। Neuropathy এর জন্য Gabapentin ৩০০ mg রাতে, Methylcobalamin।\nরোগী: ইনজেকশন নিতে পারমু না।\nডাক্তার: এখন না। কিন্তু control না হইলে পরে ভাবতে হবে।\nডাক্তার: ভাত half plate। মিষ্টি, পান চিনি বন্ধ। সবজি বেশি। প্রতিদিন ৩০ মিনিট হাঁটা।\nডাক্তার: ৩ মাস পর সব test repeat।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Bilateral foot paresthesia and burning", "duration": "2-3 months", "timing": "Worse at night"},
+      {"complaint": "Nocturia 3-4 times, polydipsia, polyuria"},
+      {"complaint": "Fatigue and reduced visual acuity"}
+    ],
+    "history": [
+      "T2DM × 4 years on Metformin 500mg BD",
+      "HTN × 4 years on Amlodipine 5mg + Losartan 50mg",
+      "Background diabetic retinopathy diagnosed 6 months ago",
+      "Poor medication adherence and dietary indiscretion (sweets, sugary betel leaf)",
+      "Today HbA1c 8.4%, FBS 165, 2h ABF 245, BP 160/95",
+      "Examination: reduced monofilament sensation bilaterally; pedal pulses preserved; no ulcer"
+    ],
+    "summary": "A 68-year-old male with 4 years of poorly controlled T2DM and HTN due to non-adherence. Today HbA1c 8.4%, BP 160/95. Now has clinical features of diabetic peripheral neuropathy (bilateral foot paresthesia with reduced monofilament sensation) and known background retinopathy. Requires intensification of antidiabetic therapy, increased ARB dose, and neuropathic pain management. Insulin not started today but will be necessary if control remains poor.",
+    "diagnoses": [
+      {"diagnosis_name": "T2DM — Uncontrolled", "icd_code": "E11.9", "confidence": 100, "reasoning": "Known T2DM × 4 years with HbA1c 8.4% on monotherapy."},
+      {"diagnosis_name": "Hypertension — Uncontrolled", "icd_code": "I10", "confidence": 100, "reasoning": "Known HTN × 4 years with BP 160/95 on existing therapy."},
+      {"diagnosis_name": "Diabetic Peripheral Neuropathy (DPN)", "icd_code": "E11.42", "confidence": 92, "reasoning": "Bilateral distal symmetric paresthesia with reduced monofilament sensation in long-standing uncontrolled T2DM."}
+    ],
+    "medicines": [
+      {"generic_name": "Metformin 500mg", "trade_name": "Comet 500", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast", "after_dinner"]}, "duration": "Continue", "purpose": "Baseline antidiabetic"},
+      {"generic_name": "Gliclazide MR 30mg", "trade_name": "Diamicron MR 30", "dosage": "1 tablet", "routine": {"meal_times": ["before_breakfast"]}, "duration": "Continue", "purpose": "Add-on sulfonylurea"},
+      {"generic_name": "Linagliptin 5mg", "trade_name": "Trezix 5", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast"]}, "duration": "Continue", "purpose": "DPP-4 inhibitor — additional glycemic control without hypoglycemia risk"},
+      {"generic_name": "Losartan 50mg", "trade_name": "Losartil 50", "dosage": "1 tablet morning + 1 night (increase from 50 to 100mg)", "routine": {"meal_times": ["after_breakfast", "after_dinner"]}, "duration": "Continue", "purpose": "ARB increase for BP control; renoprotective"},
+      {"generic_name": "Amlodipine 5mg", "trade_name": "Amdocal 5", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast"]}, "duration": "Continue", "purpose": "Continue CCB"},
+      {"generic_name": "Gabapentin 300mg", "trade_name": "Gabapen 300", "dosage": "1 tablet at night × 3 days, then 1 morning + 1 night", "routine": {"meal_times": ["after_dinner"]}, "duration": "4 weeks then reassess", "purpose": "Neuropathic pain control"}
+    ],
+    "investigations": [
+      {"investigation_name": "HbA1c, FBS, 2h ABF", "reasoning": "Recheck glycemic status after therapy intensification"},
+      {"investigation_name": "Serum Creatinine, Urine ACR", "reasoning": "Screen for diabetic nephropathy; baseline before increasing Losartan"},
+      {"investigation_name": "Lipid Profile", "reasoning": "CV risk assessment"},
+      {"investigation_name": "ECG", "reasoning": "Baseline cardiac assessment in elderly diabetic-hypertensive"}
+    ],
+    "advice": [
+      "Daughter to use a pill organizer and ensure medication compliance",
+      "Strict diet — rice half plate per meal, no sweets, no sugar in betel leaf",
+      "Daily 30-minute walking once neuropathic pain settles",
+      "Daily foot inspection for cuts or color change; wear closed footwear",
+      "Follow up in 3 months with all tests; insulin will be considered if control remains poor"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "case_23",
+  "description": "40 y/o female housewife with 6-12 month classical hypothyroidism — fatigue, weight gain, hair fall, cold intolerance, constipation, menorrhagia, dry skin, low mood. Multiple prior consultations missed thyroid workup. Mother has thyroid disease. Bradycardia, delayed reflexes on examination.",
+  "parameters": {
+    "category": "Other",
+    "age": 40,
+    "sex": "Female",
+    "education": "Secondary",
+    "occupation": "Housewife",
+    "setting": "Urban",
+    "companion": "Spouse",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Vague with folk terms",
+    "language_mix": "Pure Bengali",
+    "pre_visit_action": "Multiple doctors, given vitamins only",
+    "specific_concern": "Nothing identified despite many doctors"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া, শরীর ভালো লাগে না।\nডাক্তার: কেমন না?\nরোগী: ক্লান্ত সবসময়। কাজে শক্তি পাই না। ঘুম পায় সবসময়।\nডাক্তার: কতদিন?\nরোগী: ৬ মাস-১ বছর।\nডাক্তার: ওজন?\nরোগী: বেড়েই চলছে। ৭ kg বাড়ছে এক বছরে। খাওয়া বাড়াইনি।\nডাক্তার: চুল?\nরোগী: পড়ে অনেক। সারা ঘরে চুল।\nস্বামী: ভাইয়া ও আগের মতন কাজ করতে পারে না। সবসময় শুয়ে।\nডাক্তার: ঠাণ্ডা লাগে?\nরোগী: হ্যাঁ। সবার গরম, আমার ঠাণ্ডা।\nডাক্তার: পায়খানা?\nরোগী: Constipation। ২-৩ দিন পর পর।\nডাক্তার: Period?\nরোগী: heavy আর irregular।\nডাক্তার: ত্বক?\nরোগী: শুকনা।\nডাক্তার: মুখ-পা ফোলা?\nরোগী: সকালে মুখ ফোলা।\nডাক্তার: Mood?\nরোগী: depression এর মতন। কিছু ভাল লাগে না।\nডাক্তার: আগে ডাক্তার?\nরোগী: ২-৩ জন। কেউ পায় নাই। শুধু vitamin দিছে।\nডাক্তার: TSH কেউ বলে নাই?\nরোগী: না।\nডাক্তার: পরিবারে thyroid?\nরোগী: মা'র আছে।\n[Examination]\nডাক্তার: Pulse ৫৬, bradycardia। শুকনা ত্বক। Periorbital puffiness mild। Reflexes - delayed relaxation। Thyroid slightly enlarged, non-tender।\nডাক্তার: আপনার সব symptoms hypothyroidism এর। TSH + FT4 আজই। আর CBC, Lipid (cholesterol বাড়ে hypothyroid এ)।\nস্বামী: কাল report?\nডাক্তার: হ্যাঁ। তারপর medicine।\nডাক্তার: Hypothyroid medicine - Thyrox 50 mcg, সকালে খালি পেটে।\nডাক্তার: সারাজীবন probably। কিন্তু সঠিক dose এ normal জীবন।\nডাক্তার: ৬ সপ্তাহ পর TSH repeat, dose adjust।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Chronic fatigue and somnolence", "duration": "6-12 months"},
+      {"complaint": "Unintentional weight gain (7 kg in 1 year)", "duration": "1 year"},
+      {"complaint": "Hair fall, dry skin, cold intolerance, constipation"},
+      {"complaint": "Heavy and irregular menstrual cycles"},
+      {"complaint": "Low mood and morning facial puffiness"}
+    ],
+    "history": [
+      "Multiple prior consultations missed thyroid workup — given only vitamins",
+      "Mother has thyroid disease (family history)",
+      "Examination: bradycardia (HR 56), dry skin, periorbital puffiness, delayed deep tendon reflex relaxation, mild non-tender thyroid enlargement"
+    ],
+    "summary": "A 40-year-old housewife with a 6-12 month history of classical clinical hypothyroidism — fatigue, somnolence, unintentional weight gain, hair fall, cold intolerance, constipation, menorrhagia, dry skin, low mood, and morning facial puffiness. Multiple prior consultations missed the diagnosis. Maternal history of thyroid disease. Examination findings strongly supportive — bradycardia, dry skin, periorbital puffiness, delayed reflex relaxation, and palpably enlarged thyroid. Clinical picture is consistent with primary hypothyroidism (most likely autoimmune — Hashimoto's). Empirical low-dose levothyroxine while awaiting confirmation is appropriate given symptom severity and clear clinical signs.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Primary Hypothyroidism (clinical) — pending TSH confirmation",
+        "icd_code": "E03.9",
+        "confidence": 90,
+        "reasoning": "Classical clinical picture with multiple typical symptoms, supportive examination findings (bradycardia, delayed DTR relaxation, dry skin, puffiness, goiter), and positive family history."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Levothyroxine Sodium 50mcg", "trade_name": "Thyrox 50 / Eltroxin 50", "dosage": "1 tablet", "routine": {"meal_times": ["before_breakfast"]}, "duration": "Continue (long-term, often lifelong) with dose titration", "purpose": "Thyroid hormone replacement — start low, titrate based on TSH"}
+    ],
+    "investigations": [
+      {"investigation_name": "TSH and FT4", "reasoning": "Confirm primary hypothyroidism and establish baseline"},
+      {"investigation_name": "Lipid Profile", "reasoning": "Hypothyroidism causes secondary dyslipidemia — common co-finding"},
+      {"investigation_name": "CBC", "reasoning": "Screen for associated anemia"}
+    ],
+    "advice": [
+      "Take Levothyroxine on EMPTY stomach, at least 30-60 minutes before breakfast",
+      "Do not take with calcium, iron, or antacids — separate by at least 4 hours",
+      "Hypothyroidism treatment is usually lifelong — do not stop without doctor's advice",
+      "Repeat TSH after 6 weeks for dose adjustment",
+      "Symptom improvement begins in 2-4 weeks but full effect takes 2-3 months"
+    ]
+  }
+}

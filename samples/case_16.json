@@ -1,0 +1,64 @@
+{
+  "id": "case_16",
+  "description": "24 y/o female university student with 6-7 months of nocturnal dyspnea, wheeze, dry cough, and daily allergic rhinitis. Maternal asthma. One-airway disease — first diagnosis. PEFR 74% predicted.",
+  "parameters": {
+    "category": "Asthma/AR",
+    "age": 24,
+    "sex": "Female",
+    "education": "Higher (University)",
+    "occupation": "Student",
+    "setting": "Urban (Dhaka)",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Clear",
+    "language_mix": "Banglish",
+    "pre_visit_action": "OTC antihistamines",
+    "specific_concern": "Night-time breathlessness, daily sneezing fits"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া, আমার শ্বাসকষ্ট আর সর্দি একসাথে।\nডাক্তার: কতদিন?\nরোগী: শ্বাসকষ্ট ৬-৭ মাস on and off. সর্দি অনেক বছর।\nডাক্তার: শ্বাসকষ্ট কখন বেশি?\nরোগী: রাতে। আর ধুলা পেলে। Cold air এ।\nডাক্তার: কাশি?\nরোগী: হ্যাঁ, dry cough রাতে।\nডাক্তার: শ্বাসে whistling sound?\nরোগী: হ্যাঁ wheezing। বুকে আঁটো লাগে।\nডাক্তার: কেউ inhaler দিছে?\nরোগী: না। OTC antihistamine - Fexo।\nডাক্তার: Allergy?\nরোগী: ধুলা, perfume - হাঁচি, চোখ চুলকায়।\nডাক্তার: হাঁচি কতবার?\nরোগী: সকালে ১০-১৫ বার একসাথে।\nডাক্তার: নাক?\nরোগী: সবসময় বন্ধ, watery discharge।\nডাক্তার: পরিবারে asthma?\nরোগী: মা'র আছে।\nডাক্তার: ধূমপান?\nরোগী: না।\n[Auscultation]\nডাক্তার: বুকে mild expiratory wheeze। PEFR মাপি... ২৮০। Predicted ৩৮০। ৭৪%।\nডাক্তার: আপনার bronchial asthma এবং allergic rhinitis - একই disease, one-airway।\nরোগী: Asthma serious?\nডাক্তার: না, control এ থাকলে normal life। শুধু inhaler নিয়মিত।\nডাক্তার: Symbicort - সকাল রাতে ২ পাফ। Sultolin - শুধু সমস্যা হলে।\nডাক্তার: Nose এ Fexo continue, Nasonex nasal spray।\nডাক্তার: Trigger - ধুলা, ঠাণ্ডা, perfume avoid। Mask বাইরে।\nডাক্তার: ২ সপ্তাহ পর inhaler technique check করব।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Nocturnal breathlessness with wheeze and chest tightness", "duration": "6-7 months (intermittent)"},
+      {"complaint": "Daily morning sneezing (10-15 in a row) with nasal congestion and watery discharge"},
+      {"complaint": "Allergic eye itching"},
+      {"complaint": "Dry nocturnal cough"}
+    ],
+    "history": [
+      "Triggers identified — dust, cold air, perfume",
+      "Maternal history of asthma",
+      "Using OTC Fexofenadine with partial relief",
+      "No smoking; no other chronic illness",
+      "PEFR 280 L/min (74% of predicted 380); bilateral mild expiratory wheeze on auscultation"
+    ],
+    "summary": "A 24-year-old female university student with a 6-7 month history of intermittent nocturnal breathlessness, wheeze, chest tightness, and dry cough, alongside daily allergic rhinitis symptoms (morning sneezing fits, nasal congestion, allergic conjunctivitis) for several years. Strong maternal family history of asthma and identifiable triggers (dust, cold air, perfume). PEFR 74% of predicted and bilateral expiratory wheeze on examination confirm symptomatic airway obstruction. Classic one-airway disease — combined Bronchial Asthma and Allergic Rhinitis. Newly diagnosed; requires initiation of controller inhaler with rescue inhaler, treatment of upper airway component, and trigger avoidance counseling.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Bronchial Asthma — Mild Persistent",
+        "icd_code": "J45.30",
+        "confidence": 92,
+        "reasoning": "Nocturnal dyspnea with wheeze, chest tightness, trigger-induced symptoms × 6-7 months, family history positive, PEFR 74% predicted with expiratory wheeze on auscultation."
+      },
+      {
+        "diagnosis_name": "Allergic Rhinitis",
+        "icd_code": "J30.9",
+        "confidence": 95,
+        "reasoning": "Chronic daily sneezing in bouts, rhinorrhea, nasal congestion, allergic eye itching with clear allergen triggers."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Budesonide 200mcg + Formoterol 6mcg MDI", "trade_name": "Symbicort 200/6 / Combicort 200/6", "dosage": "2 puffs", "routine": {"meal_times": ["morning", "night"]}, "duration": "Continue regularly long-term", "purpose": "ICS-LABA controller therapy — REGULAR DAILY USE"},
+      {"generic_name": "Salbutamol 100mcg MDI", "trade_name": "Sultolin / Asmanyl", "dosage": "2 puffs", "routine": {"as_needed": "for breakthrough symptoms"}, "duration": "PRN", "purpose": "Rescue reliever"},
+      {"generic_name": "Fexofenadine 120mg", "trade_name": "Fexo 120 / Telfast 120", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast"]}, "duration": "Continue (long-term, can be daily during exposure)", "purpose": "Antihistamine for allergic rhinitis"},
+      {"generic_name": "Mometasone Furoate 50mcg nasal spray", "trade_name": "Nasonex / Mometa Nasal Spray", "dosage": "2 sprays in each nostril", "routine": {"meal_times": ["morning"]}, "duration": "Continue daily", "purpose": "Intranasal corticosteroid for allergic rhinitis"}
+    ],
+    "investigations": [],
+    "advice": [
+      "Inhaler technique critical — use a spacer; demonstrated technique must be followed",
+      "Avoid known triggers: dust, perfume, cold air; wear mask outdoors during commute",
+      "Use of damp cloth for home dusting; wash bedsheets weekly in hot water",
+      "Take Symbicort EVERY DAY — even when feeling well; Salbutamol is rescue only",
+      "Return in 2 weeks to re-check inhaler technique, PEFR, and treatment response"
+    ]
+  }
+}

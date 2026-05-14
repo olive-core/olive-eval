@@ -1,0 +1,61 @@
+{
+  "id": "case_01",
+  "description": "26 y/o male IT professional with new APD with reflux, lifestyle-related. Self-medicated with Sergel 20mg for 3 weeks with partial relief. Banglish speaker, clear articulation, alone.",
+  "parameters": {
+    "category": "APD/GERD/FD",
+    "age": 26,
+    "sex": "Male",
+    "education": "Higher (Graduate)",
+    "occupation": "IT Professional",
+    "setting": "Urban (Dhaka)",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Short",
+    "articulation": "Clear, focused",
+    "language_mix": "Banglish",
+    "pre_visit_action": "Self-medicated Sergel 20mg × 3 weeks",
+    "specific_concern": "Wants permanent solution, irregular meals due to IT job"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন। কী সমস্যা?\nরোগী: ভাইয়া, stomach এ অনেক acidity। দেড় মাস ধরে।\nডাক্তার: কোথায়?\nরোগী: chest এর নিচে, burning sensation, জ্বালা পোড়া।\nডাক্তার: কখন বেশি?\nরোগী: Mainly খাওয়ার পরে। রাতে শুতে গেলে worse।\nডাক্তার: টক ঢেঁকুর? মুখে টক স্বাদ?\nরোগী: হ্যাঁ, sour taste সকালে।\nডাক্তার: বুকজ্বালা?\nরোগী: হ্যাঁ, heartburn।\nডাক্তার: বমি? কালো পায়খানা? ওজন কমা?\nরোগী: না, কিছু না।\nডাক্তার: Job?\nরোগী: IT তে কাজ করি। Outside খাই - fast food। Meal timing irregular। রাতে ১১-১২টায় dinner।\nডাক্তার: চা-কফি?\nরোগী: Coffee ৫-৬ cup।\nডাক্তার: ধূমপান, alcohol?\nরোগী: না।\nডাক্তার: Medicine?\nরোগী: Pharmacy থেকে Sergel 20 mg, ৩ সপ্তাহ। প্রথমে relief, এখন আবার সমস্যা।\nডাক্তার: পরিবারে ulcer, stomach cancer?\nরোগী: না।\nডাক্তার: এটা APD with reflux। Lifestyle এর জন্য। এখন test লাগব না।\nডাক্তার: Permanent cure চাইলে lifestyle change - meal timing fix, late dinner বন্ধ, coffee কমাবেন।\nডাক্তার: ৪ সপ্তাহ medicine, তারপর follow up। Weight loss, vomiting, black stool হলে endoscopy লাগব।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Epigastric burning, postprandial and nocturnal", "duration": "1.5 months"},
+      {"complaint": "Sour taste in mouth in the morning", "duration": "1.5 months"},
+      {"complaint": "Heartburn", "duration": "1.5 months"}
+    ],
+    "history": [
+      "Irregular meal timing; late dinner (11-12 PM)",
+      "High caffeine intake — 5-6 cups coffee daily",
+      "Frequent fast food / outside food",
+      "Self-medicated with Esomeprazole 20mg × 3 weeks — partial response only",
+      "No smoking, no alcohol, no alarm features, no family history of GI malignancy"
+    ],
+    "summary": "A 26-year-old male IT professional with 1.5 months of postprandial epigastric burning, sour regurgitation, and heartburn — classical APD with reflux symptoms driven by clear lifestyle factors (irregular meals, excess coffee, late dinner). Partial response to self-medicated PPI. No alarm features.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Acid Peptic Disease (APD) with reflux",
+        "icd_code": "K21.9",
+        "confidence": 90,
+        "reasoning": "Classic lifestyle-driven GERD presentation in a young patient with no alarm features."
+      }
+    ],
+    "medicines": [
+      {
+        "generic_name": "Esomeprazole 40mg",
+        "trade_name": "Sergel 40 / Maxpro 40",
+        "dosage": "1 tablet",
+        "routine": {"meal_times": ["before_breakfast"]},
+        "duration": "4 weeks",
+        "purpose": "Acid suppression"
+      }
+    ],
+    "investigations": [],
+    "advice": [
+      "Maintain fixed meal timing; take dinner before 9 PM and at least 2-3 hours before sleeping",
+      "Reduce coffee intake to maximum 2 cups daily",
+      "Avoid spicy, oily, and fried food during treatment period",
+      "Elevate head end of bed; do not lie down immediately after meals",
+      "Follow up in 4 weeks; come immediately if weight loss, vomiting, or black stool develops (endoscopy then required)"
+    ]
+  }
+}

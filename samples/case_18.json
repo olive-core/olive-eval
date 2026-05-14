@@ -1,0 +1,53 @@
+{
+  "id": "case_18",
+  "description": "38 y/o male construction worker with acute mechanical low back pain × 3 days after lifting heavy cement bag. No red flags. Conservative management without imaging.",
+  "parameters": {
+    "category": "Musculoskeletal",
+    "age": 38,
+    "sex": "Male",
+    "education": "Primary",
+    "occupation": "Construction worker",
+    "setting": "Urban (slum)",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Short",
+    "articulation": "Minimal, in pain",
+    "language_mix": "Pure Bengali",
+    "pre_visit_action": "Pharmacy painkiller",
+    "specific_concern": "Can't afford to stop work"
+  },
+  "conversation": "ডাক্তার: আসুন, কী হইছে?\nরোগী: ভাইয়া, কোমরে ব্যথা। ৩ দিন।\nডাক্তার: কীভাবে?\nরোগী: ভারী cement ব্যাগ তুলতে গিয়া। হঠাৎ ক্যাঁক ধরছে।\nডাক্তার: কোথায়?\nরোগী: পিঠের নীচে, কোমরে।\nডাক্তার: পায়ে যায়?\nরোগী: না।\nডাক্তার: পায়ে ঝিম ঝিম, দুর্বলতা?\nরোগী: না।\nডাক্তার: প্রস্রাব-পায়খানার সমস্যা?\nরোগী: না।\nডাক্তার: রাতে বাড়ে?\nরোগী: না, কাজ করলে বাড়ে। শুইলে কম।\nডাক্তার: জ্বর, ওজন কমা?\nরোগী: না।\n[Examination]\nডাক্তার: SLR negative দু পায়ে। L5-S1 area তে tenderness। Reflexes ঠিক। Motor ঠিক।\nডাক্তার: এটা mechanical low back pain - muscular strain। Disc problem না, nerve compression না।\nডাক্তার: X-ray, MRI এখন লাগব না।\nডাক্তার: ২-৩ দিন rest, painkiller, গরম সেক। আস্তে কাজে ফিরবেন।\nরোগী: কাজ না করলে খাব কী?\nডাক্তার: বুঝি ভাইয়া। ভারী জিনিস কয়েকদিন না।\nডাক্তার: ভারী তোলার সময় হাঁটু ভেঙে, পিঠ সোজা। কোমর বাঁকানো না।\nডাক্তার: ১ সপ্তাহে ভাল না হলে আসবেন।\nডাক্তার: গরম পানির bottle কোমরে দিতে পারেন।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Acute lower back pain after lifting heavy cement bag", "duration": "3 days", "character": "Mechanical — worse on activity, better on rest", "radiation": "No radiation to legs"}
+    ],
+    "history": [
+      "Manual labour (construction worker)",
+      "No prior back issues",
+      "No fever, no weight loss, no night pain",
+      "No bowel/bladder symptoms",
+      "Examination: SLR negative bilaterally, lumbosacral tenderness, normal motor and reflexes — no red flags"
+    ],
+    "summary": "A 38-year-old male construction worker with acute mechanical low back pain of 3 days duration following an episode of lifting a heavy cement bag. Classic mechanical pattern — worse with activity, better with rest, no radicular features, no neurological deficit, and no red flag features. Examination confirms localized lumbosacral tenderness with negative SLR and normal motor/reflex examination. This is uncomplicated acute mechanical back strain that does not require imaging at this stage. Short course of analgesia, brief activity modification, and education on lifting technique are appropriate.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Acute Mechanical Low Back Pain (Lumbar Muscular Strain)",
+        "icd_code": "M54.5",
+        "confidence": 92,
+        "reasoning": "Acute pain following identifiable mechanical trigger, classic mechanical pattern, no radicular or red flag features, normal neurological examination."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Etoricoxib 90mg", "trade_name": "Etorix 90 / Arcoxia 90", "dosage": "1 tablet", "routine": {"meal_times": ["after_lunch"]}, "duration": "5 days", "purpose": "NSAID for inflammation and pain"},
+      {"generic_name": "Eperisone 50mg", "trade_name": "Myonil 50 / Eperisone 50", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast", "after_lunch", "after_dinner"]}, "duration": "5 days", "purpose": "Muscle relaxant for paraspinal spasm"},
+      {"generic_name": "Esomeprazole 20mg", "trade_name": "Sergel 20 / Maxpro 20", "dosage": "1 tablet", "routine": {"meal_times": ["before_breakfast"]}, "duration": "5 days", "purpose": "Gastroprotection during NSAID use"}
+    ],
+    "investigations": [],
+    "advice": [
+      "Rest from heavy lifting for 5-7 days; light activity is encouraged",
+      "Apply warm compress (hot water bottle) to the lower back 2-3 times daily",
+      "When lifting in future — bend knees, keep back straight; do not bend at the waist",
+      "Return in 1 week if pain not improving, or immediately if leg weakness, numbness, or bowel/bladder symptoms develop"
+    ]
+  }
+}

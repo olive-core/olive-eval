@@ -1,0 +1,53 @@
+{
+  "id": "case_11",
+  "description": "28 y/o female corporate worker with 3-day viral URTI. Demanding antibiotic because of upcoming meeting. Test of resistance to inappropriate prescription pressure.",
+  "parameters": {
+    "category": "Acute Respiratory/Fever",
+    "age": 28,
+    "sex": "Female",
+    "education": "Higher",
+    "occupation": "Corporate",
+    "setting": "Urban",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Short",
+    "articulation": "Clear",
+    "language_mix": "Banglish",
+    "pre_visit_action": "Taking Paracetamol",
+    "specific_concern": "Important meeting next week — demands antibiotic for quick recovery"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া, ৩ দিন ধরে cold। নাক বন্ধ, হাঁচি, throat sore। জ্বরও হইছিল।\nডাক্তার: জ্বর কতটুকু?\nরোগী: ১০০-১০১। Napa দিলে কমে যায়।\nডাক্তার: এখন জ্বর?\nরোগী: না, ২ দিন থেকে নাই। কিন্তু symptoms আছে। কাশি একটু শুরু।\nডাক্তার: কাশিতে কফ?\nরোগী: না, dry।\nডাক্তার: শ্বাসকষ্ট?\nরোগী: না।\nডাক্তার: এটা viral URTI - common cold। Symptomatic treatment।\nরোগী: ভাইয়া next week এ important meeting, presentation আছে। দ্রুত ভালো হওয়া দরকার। Antibiotic দেন strong।\nডাক্তার: Viral infection এ antibiotic কাজ করে না। বাজে effect - resistance, side effects।\nরোগী: আগে অন্য ডাক্তার Zimax দিছিল, ৩ দিনে ভালো হইছিল।\nডাক্তার: ওইটা coincidence। আপনার immune system নিজেই ভালো করছিল। Viral cold ৫-৭ দিনে এমনি ভালো হয়।\nডাক্তার: এখন strong antibiotic use করলে পরে real bacterial infection হইলে কাজ করবে না।\nডাক্তার: আমি যা দিচ্ছি ভালোভাবে ভালো হইব। ৭ দিনে presentation এর জন্য fit।\nরোগী: ঠিক আছে ভাইয়া।\nডাক্তার: Antihistamine, lozenges, paracetamol prn, গরম পানি দিয়ে gargle। বিশ্রাম বেশি, hot water + lemon + honey।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Nasal block, sneezing, sore throat", "duration": "3 days"},
+      {"complaint": "Dry cough", "duration": "1-2 days"},
+      {"complaint": "Low-grade fever (now resolved)", "duration": "First 1-2 days"}
+    ],
+    "history": [
+      "No chronic illness, no allergies, no asthma",
+      "Self-treating with Paracetamol with good response",
+      "No purulent nasal discharge, no breathing difficulty"
+    ],
+    "summary": "A 28-year-old healthy female corporate worker with a typical 3-day viral upper respiratory tract infection — nasal congestion, sneezing, sore throat, mild dry cough, and resolved low-grade fever. No clinical features of bacterial infection. Self-limiting illness expected to resolve in 5-7 days. Patient is requesting antibiotics due to an upcoming work commitment — antibiotic is NOT indicated and should be declined despite pressure. Symptomatic management is appropriate.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Viral Upper Respiratory Tract Infection (Common Cold)",
+        "icd_code": "J00",
+        "confidence": 95,
+        "reasoning": "Typical viral URTI symptoms in an otherwise healthy adult, fever already resolving, no purulent secretions, dry cough only. Self-limiting."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Fexofenadine 120mg", "trade_name": "Fexo 120 / Telfast 120", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast"]}, "duration": "5 days", "purpose": "Antihistamine for rhinorrhea, sneezing, post-nasal drip"},
+      {"generic_name": "Paracetamol 500mg", "trade_name": "Napa 500 / Ace 500", "dosage": "1 tablet", "routine": {"as_needed": "for fever or body ache"}, "duration": "PRN, maximum 4 times daily", "purpose": "Antipyretic/analgesic as needed"}
+    ],
+    "investigations": [],
+    "advice": [
+      "Antibiotic is NOT needed — this is a viral infection and antibiotics will not work",
+      "Warm salt water gargle 3-4 times daily for sore throat",
+      "Plenty of warm fluids — water, lemon-honey water, soup",
+      "Rest; expect natural recovery in 5-7 days",
+      "Return if fever returns >102°F, breathing difficulty, purulent (yellow-green) nasal discharge, or persistent symptoms beyond 10 days"
+    ]
+  }
+}

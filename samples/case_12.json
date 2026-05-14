@@ -1,0 +1,65 @@
+{
+  "id": "case_12",
+  "description": "42 y/o male taxi driver, 20-year smoker, with 2-week productive cough (yellow sputum) post-URTI. Recurrent winter bronchitis. Likely acute bacterial bronchitis on background of early COPD.",
+  "parameters": {
+    "category": "Acute Respiratory/Fever",
+    "age": 42,
+    "sex": "Male",
+    "education": "Secondary",
+    "occupation": "Taxi driver",
+    "setting": "Urban",
+    "companion": "Alone",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Clear",
+    "language_mix": "Bengali with some English",
+    "pre_visit_action": "OTC cold medications",
+    "specific_concern": "Cough not improving × 2 weeks"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nরোগী: ভাইয়া, ২ সপ্তাহ ধরে কাশি। কমতেছে না।\nডাক্তার: কাশিতে কফ?\nরোগী: হ্যাঁ, সবুজ-হলুদ।\nডাক্তার: শুরুতে কেমন?\nরোগী: শুরুতে সর্দি জ্বর ৩ দিন। তারপর dry cough, ৪-৫ দিন পর কফ।\nডাক্তার: জ্বর এখন?\nরোগী: না, ১ সপ্তাহ থেকে নাই।\nডাক্তার: শ্বাসকষ্ট, বুক ব্যথা?\nরোগী: শ্বাসকষ্ট তেমন না। কাশতে গিয়া বুকে একটু ব্যথা।\nডাক্তার: রক্ত?\nরোগী: না।\nডাক্তার: ওজন কমা, রাতে ঘাম?\nরোগী: না।\nডাক্তার: ধূমপান?\nরোগী: ভাইয়া অনেক বছর। দিনে ১৫-২০টা। ২০ বছর।\nডাক্তার: কাজ?\nরোগী: Taxi চালাই।\nডাক্তার: আগে এমন বার বার হয়?\nরোগী: প্রায় winter এ ১-২ সপ্তাহ।\nডাক্তার: Asthma, TB family?\nরোগী: না, কেউ না।\n[Auscultation]\nডাক্তার: বুকে bilateral crackles আছে, wheeze নাই।\nডাক্তার: এটা acute bronchitis, সম্ভবত bacterial। ২০ বছর smoking + dust - early chronic bronchitis/COPD হইতেছে probably।\nডাক্তার: CXR করি, sputum AFB ৩ দিন (TB rule out)।\nডাক্তার: Smoking ছাড়া most important। আপনার জন্য life-saving।\nরোগী: চেষ্টা করব ভাইয়া। কঠিন।\nডাক্তার: Antibiotic ৭ দিন। Salbutamol inhaler ব্যবহার করবেন সমস্যা হলে।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Productive cough with yellow-green sputum", "duration": "2 weeks"},
+      {"complaint": "Preceded by URTI for 3 days, fever resolved 1 week ago"},
+      {"complaint": "Mild chest pain on coughing"}
+    ],
+    "history": [
+      "Smoker × 20 years (15-20 sticks/day)",
+      "Occupational dust exposure (taxi driver)",
+      "Recurrent winter bronchitis (1-2 weeks every winter)",
+      "No asthma, no TB family history, no hemoptysis, no weight loss, no night sweats",
+      "On examination: bilateral crackles, no wheeze, afebrile"
+    ],
+    "summary": "A 42-year-old male taxi driver and 20-year smoker presenting with 2-week productive cough with yellow-green sputum following a viral URTI. Suggestive of acute bacterial bronchitis on a background of likely early chronic bronchitis/COPD given chronic smoking, occupational dust exposure, and recurrent winter episodes. Bilateral crackles on auscultation with no wheeze. No clinical features of pneumonia or TB but workup needed given chronicity and risk factors. Antibiotic therapy and aggressive smoking cessation counseling are indicated.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Acute Bronchitis with likely bacterial superinfection (post-viral)",
+        "icd_code": "J20.9",
+        "confidence": 75,
+        "reasoning": "Productive cough with purulent (yellow-green) sputum following URTI, persistent for 2 weeks, with bilateral crackles in a heavy smoker — bacterial superinfection probable but not definitive."
+      },
+      {
+        "diagnosis_name": "Suspected Chronic Bronchitis / Early COPD",
+        "icd_code": "J44.9",
+        "confidence": 65,
+        "reasoning": "20-year smoking history with recurrent winter bronchitic episodes and occupational dust exposure. Requires spirometry confirmation after acute episode resolves."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Amoxicillin + Clavulanic Acid 625mg", "trade_name": "Moxaclav 625 / Augmentin 625", "dosage": "1 tablet", "routine": {"gap_hours": 8}, "duration": "7 days", "purpose": "Empirical antibiotic for likely bacterial superinfection in chronic smoker"},
+      {"generic_name": "Ambroxol 30mg", "trade_name": "Mucolyt 30 / Mucosolvin 30", "dosage": "1 tablet", "routine": {"meal_times": ["after_breakfast", "after_lunch", "after_dinner"]}, "duration": "7 days", "purpose": "Mucolytic to ease sputum clearance"}
+    ],
+    "investigations": [
+      {"investigation_name": "Chest X-Ray PA view", "reasoning": "Rule out pneumonia in setting of 2-week persistent productive cough in smoker"},
+      {"investigation_name": "Sputum for AFB (3 consecutive days)", "reasoning": "Rule out tuberculosis given chronic cough in adult — endemic country"},
+      {"investigation_name": "Spirometry (after acute episode resolves)", "reasoning": "Confirm/exclude COPD given chronic smoking and recurrent bronchitis"}
+    ],
+    "advice": [
+      "STOP SMOKING — this is the single most important intervention; offer to discuss cessation aids",
+      "Wear a mask while driving — reduce occupational dust exposure",
+      "Complete full antibiotic course even if symptoms improve",
+      "Plenty of warm fluids; rest as much as possible",
+      "Return immediately if hemoptysis (blood in sputum), severe breathlessness, or persistent fever develops"
+    ]
+  }
+}

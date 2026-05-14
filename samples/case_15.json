@@ -1,0 +1,56 @@
+{
+  "id": "case_15",
+  "description": "5 y/o male child with 4-day viral fever and URTI symptoms. School exposure. Anxious mother. Normal examination. Test of antibiotic restraint in paediatric viral illness.",
+  "parameters": {
+    "category": "Acute Respiratory/Fever",
+    "age": 5,
+    "sex": "Male (child)",
+    "education": "Mother: Secondary",
+    "occupation": "Child (school-going)",
+    "setting": "Urban",
+    "companion": "Mother (primary historian)",
+    "visit_type": "New",
+    "length": "Medium",
+    "articulation": "Anxious mother, detailed",
+    "language_mix": "Bengali",
+    "pre_visit_action": "Paracetamol syrup q6h",
+    "specific_concern": "Wants quick recovery; mother anxious"
+  },
+  "conversation": "ডাক্তার: আসসালামু আলাইকুম, বসুন।\nমা: ভাইয়া আমার ছেলে ৪ দিন ধরে জ্বর। কমতেছে না ঠিকমতন।\nডাক্তার: কত উঠতেছে?\nমা: ১০২-১০৩। Napa syrup দিলে কমে, ৪-৫ ঘন্টা পর বাড়ে।\nডাক্তার: কাশি, সর্দি?\nমা: হ্যাঁ, সর্দি অনেক। নাক বন্ধ। কাশিও আছে dry।\nডাক্তার: গলা ব্যথা?\nমা: কান্না করতেছে গিলতে গেলে।\nডাক্তার: কান টানতেছে?\nমা: না।\nডাক্তার: বমি, পাতলা পায়খানা?\nমা: না।\nডাক্তার: জ্বরের সাথে ঝাঁকি (seizure)?\nমা: না না।\nডাক্তার: খাওয়া?\nমা: কম খাইতেছে। দুধ চালাইতেছে।\nডাক্তার: প্রস্রাব?\nমা: regular।\nডাক্তার: কেউ এই রকম symptoms সাথে?\nমা: স্কুলে অনেক বাচ্চার ঠাণ্ডা হইছিল।\nডাক্তার: Napa syrup কতটুকু?\nমা: ৬ ঘন্টা পর পর ৫ ml।\nডাক্তার: ওজন?\nমা: ১৭ kg।\n[Examination]\nডাক্তার: গলা একটু লাল। Tonsils enlarged না, exudate নাই। কান clear। বুক clear, wheeze/crackles নাই।\nডাক্তার: এটা viral fever with URTI। Bacterial কিছু না - tonsils ঠিক, কান ঠিক।\nডাক্তার: ২-৩ দিনে ভাল হবে। Self-limiting।\nমা: ভাইয়া antibiotic দিবেন না?\nডাক্তার: না। Antibiotic এর দরকার নাই। Viral এ কাজ করে না।\nমা: চিন্তা ভাইয়া।\nডাক্তার: ভয় নাই। জ্বর ৭ দিনের বেশি গেলে আবার আসবেন, blood test করব।\nডাক্তার: Paracetamol syrup ৫ ml, ৬ ঘন্টা পর জ্বর ১০০ এর উপরে। তরল বেশি।\nডাক্তার: জ্বরে seizure, শ্বাসকষ্ট, কান টানা, খুব lethargy - সাথে সাথে hospital।",
+  "expected_prescription": {
+    "chief_complaints": [
+      {"complaint": "Fever 102-103°F partially responsive to Paracetamol", "duration": "4 days"},
+      {"complaint": "Nasal congestion, sneezing, dry cough", "duration": "4 days"},
+      {"complaint": "Mild sore throat with reluctance to swallow"},
+      {"complaint": "Decreased appetite (but adequate fluid intake)"}
+    ],
+    "history": [
+      "5-year-old male, weight 17 kg",
+      "Recent school exposure to similar illness",
+      "No vomiting, no diarrhea, no ear pulling, no rash, no seizure",
+      "Drinking milk and fluids adequately; urine output normal",
+      "Mother giving Paracetamol syrup 5ml every 6 hours appropriately",
+      "Examination: mild pharyngeal erythema; tonsils normal (no exudate); ears clear; chest clear; no danger signs"
+    ],
+    "summary": "A 5-year-old male (17 kg) with a 4-day febrile illness consistent with viral upper respiratory tract infection — fever, nasal congestion, dry cough, mild sore throat with school contact history. Examination shows mild pharyngeal erythema only; no bacterial features (no tonsillar exudate), no ear involvement, chest clear, and no danger signs (no seizure, no respiratory distress, no dehydration, no lethargy). Mother is administering Paracetamol appropriately and child is taking fluids well. This is self-limiting viral illness that does not require antibiotics. Conservative management with reassurance, continued symptomatic treatment, and clear instructions for warning signs is appropriate.",
+    "diagnoses": [
+      {
+        "diagnosis_name": "Viral Fever with Upper Respiratory Tract Infection in Child",
+        "icd_code": "J06.9",
+        "confidence": 92,
+        "reasoning": "Typical viral URTI features with school exposure, no bacterial signs (no tonsillar exudate, no ear involvement, no purulent secretions), no chest findings, and no danger signs."
+      }
+    ],
+    "medicines": [
+      {"generic_name": "Paracetamol Syrup 120mg/5ml", "trade_name": "Napa Syrup / Ace Syrup", "dosage": "10 ml", "routine": {"gap_hours": 6, "as_needed": "if temperature >100°F"}, "duration": "Until fever subsides", "purpose": "Antipyretic — weight-based dose for 17 kg child (~15 mg/kg = 240mg = 10ml of 120mg/5ml syrup)"},
+      {"generic_name": "Saline Nasal Drops 0.65%", "trade_name": "Salinex / Nasokind", "dosage": "1-2 drops in each nostril", "routine": {"gap_hours": 6}, "duration": "5 days", "purpose": "Symptomatic relief of nasal congestion"}
+    ],
+    "investigations": [],
+    "advice": [
+      "Antibiotic NOT needed — this is a viral infection",
+      "Encourage plenty of fluids (water, breast milk if any, soup, juice) and continue feeding as tolerated",
+      "Tepid sponging with normal-temperature water if temperature >102°F",
+      "Return immediately if: seizure, breathing difficulty, ear pulling/discharge, refusing fluids, very lethargic, or fever persisting beyond 7 days"
+    ]
+  }
+}
